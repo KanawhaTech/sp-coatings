@@ -1,65 +1,412 @@
 import Image from "next/image";
+import Link from "next/link";
+import HeroSlider from "@/components/HeroSlider";
+import NewsCarousel from "@/components/NewsCarousel";
+import VideoCarousel from "@/components/VideoCarousel";
+import {
+  productLogos,
+  recentNews,
+  globalStats,
+  accreditations,
+  videoResources,
+} from "@/lib/data/home";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div>
+      {/* ── Hero Slider ── */}
+      <section style={{ position: "relative" }}>
+        <HeroSlider />
+      </section>
+
+      {/* ── Welcome + Product Logo Grid ── */}
+      <section style={{ padding: "60px 0 50px", background: "#fff" }}>
+        <div className="container mx-auto px-4 text-center">
+          <h1 style={{ color: "#CC2026", fontSize: "1.7em", fontWeight: "800", marginBottom: "14px" }}>
+            Welcome to SPI Coatings, Inc. - The World&apos;s Coating Innovator™
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p style={{ fontSize: "14px", color: "#555", maxWidth: "820px", margin: "0 auto 40px", lineHeight: "1.8" }}>
+            SPI Coatings designs, formulates, and manufactures the world&apos;s most innovative coatings and solutions
+            that solve major industrial problems. We help reduce energy usage, stop corrosion, give personal protection, and so much more.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+          {/* Product logos grid — 3×2 */}
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(3, 1fr)",
+              gap: "10px",
+              maxWidth: "780px",
+              margin: "0 auto 36px",
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            {productLogos.map((p, i) => (
+              <Link
+                key={p.name}
+                href={p.href}
+                className={`card-modern animate-fade-up delay-${(i + 1) * 100}`}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  padding: "28px 20px",
+                  textDecoration: "none",
+                  minHeight: "110px",
+                }}
+              >
+                <div style={{ position: "relative", width: "100%", height: "52px" }}>
+                  <Image src={p.logo} alt={p.name} fill style={{ objectFit: "contain" }} />
+                </div>
+                <p style={{ color: "#777", fontSize: "11px", marginTop: "8px", lineHeight: "1.3", textAlign: "center" }}>
+                  {p.tagline}
+                </p>
+              </Link>
+            ))}
+          </div>
+
+          <Link href="/coating-products" className="btn-cta btn-cta-orange">
+            FULL COATINGS RANGE
+          </Link>
         </div>
-      </main>
+      </section>
+
+      {/* ── News / Coatings / Projects — 3 banner cards ── */}
+      <section style={{ padding: "0 0 60px", background: "#fff" }}>
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3" style={{ gap: "8px" }}>
+            {[
+              { label: "News", image: "/images/news-bg.jpg", href: "/news" },
+              { label: "Coatings", image: "/images/coatings-bg.jpg", href: "/coating-products" },
+              { label: "Projects", image: "/images/projects-bg.jpg", href: "/projects" },
+            ].map((card) => (
+              <Link key={card.label} href={card.href} className="banner-card">
+                <Image src={card.image} alt={card.label} fill style={{ objectFit: "cover" }} />
+                <div className="banner-card-overlay">
+                  <span style={{ color: "#fff", fontWeight: "800", fontSize: "1.5em", letterSpacing: "2px", textTransform: "uppercase" }}>
+                    {card.label}
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Recent News ── */}
+      <section style={{ padding: "60px 0", background: "#fff" }}>
+        <div className="container mx-auto px-4">
+          <div className="text-center animate-fade-up" style={{ marginBottom: "40px" }}>
+            <div className="section-accent" style={{ margin: "0 auto 12px" }} />
+            <h2 style={{ color: "#CC2026", fontSize: "1.9em", fontWeight: "800", marginBottom: "8px" }}>
+              Recent News
+            </h2>
+            <p style={{ color: "#777", fontSize: "14px" }}>Transforming the world with innovative coatings</p>
+          </div>
+          <NewsCarousel items={recentNews} />
+        </div>
+      </section>
+
+      {/* ── Coatings Resource Center — YouTube videos ── */}
+      <section style={{ padding: "60px 0", background: "#f7f7f7" }}>
+        <div className="container mx-auto px-4">
+          <div className="text-center animate-fade-up" style={{ marginBottom: "36px" }}>
+            <div className="section-accent" style={{ margin: "0 auto 12px" }} />
+            <h2 style={{ color: "#CC2026", fontSize: "1.9em", fontWeight: "800", marginBottom: "10px" }}>
+              Coatings Resource Center
+            </h2>
+            <Link href="/resources" style={{ color: "#00578e", fontWeight: "700", fontSize: "13px", textDecoration: "none" }}>
+              More Videos and Resources →
+            </Link>
+          </div>
+          <VideoCarousel items={videoResources} />
+        </div>
+      </section>
+
+      {/* ── Thin Film / Thick Film Science ── */}
+      <section style={{ padding: "60px 0", background: "#f7f7f7" }}>
+        <div className="container mx-auto px-4">
+          {/* Headline */}
+          <div style={{ marginBottom: "36px" }}>
+            <h2 style={{ fontSize: "1.6em", fontWeight: "800", lineHeight: "1.3" }}>
+              <span style={{ background: "#f99d22", color: "#fff", padding: "2px 8px", marginRight: "4px" }}>
+                Thin Film. Thick Film. Real
+              </span>
+              <span style={{ color: "#CC2026" }}>Insulation Science Performance!</span>
+            </h2>
+          </div>
+
+          {/* 2-column content */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div>
+              <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9", marginBottom: "14px" }}>
+                <strong>SPI Coatings</strong> is the only insulation-coating manufacturer that developed both{" "}
+                <strong>thin-film and thick-film ceramic systems</strong>, each engineered for a completely different heat-control function.
+              </p>
+              <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9", marginBottom: "14px" }}>
+                Thin films are designed to <strong>block radiative</strong> heat at the surface.
+              </p>
+              <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9", marginBottom: "14px" }}>
+                Thick films are designed to <strong>hold and control conducted heat</strong> on hot substrates.
+              </p>
+              <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9", marginBottom: "14px" }}>
+                They are not interchangeable.
+              </p>
+              <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9" }}>
+                No matter what a manufacturer claims, a thick coating cannot block radiative heat the way a properly engineered thin ceramic film can. The physics doesn&apos;t allow it.
+              </p>
+            </div>
+            <div>
+              <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9", marginBottom: "14px" }}>
+                Most insulation-coating suppliers only offer an average-performing thick film and market it as a universal solution. Industry is now discovering the limitation.
+              </p>
+              <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9", marginBottom: "14px" }}>
+                Between 1989 and 1995, SPI Coatings worked directly with <strong>NASA</strong> in a six-year research program led by the company&apos;s founder, focusing on ceramic compound behaviour. That work identified which ceramic structures function in thin films and which are required for thick insulation systems.
+              </p>
+              <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9", marginBottom: "14px" }}>
+                That knowledge gap still exists today.
+              </p>
+              <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9" }}>
+                There is no other manufacturer with{" "}
+                <strong style={{ color: "#00578e" }}>
+                  <Link href="/about" style={{ color: "#00578e", textDecoration: "underline" }}>
+                    37 years of continuous ceramic insulation research
+                  </Link>
+                </strong>{" "}
+                producing coatings that perform exactly as claimed. Not four years. Not marketing hype. Proven performance, delivered for decades.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Global Projects ── */}
+      <section style={{ padding: "60px 0", background: "#fff" }}>
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Text left */}
+            <div>
+              <h2 style={{ color: "#CC2026", fontSize: "1.6em", fontWeight: "800", marginBottom: "10px" }}>
+                Global Projects and Local Solutions
+              </h2>
+              <p style={{ color: "#555", fontSize: "14px", lineHeight: "1.8", marginBottom: "12px" }}>
+                Globally SPI products have transformed the planet offering multiple solutions to many challenges.{" "}
+                <Link href="/projects" style={{ color: "#00578e", fontWeight: "600" }}>more projects &gt;</Link>
+              </p>
+              <div style={{ display: "flex", gap: "12px", alignItems: "flex-start", marginTop: "24px", flexWrap: "wrap" }}>
+                {/* SPI Global logo */}
+                <div style={{ position: "relative", width: "100px", height: "100px", flexShrink: 0 }}>
+                  <Image src="/images/spi-global-logo.png" alt="SPI Global Distribution Network" fill style={{ objectFit: "contain" }} />
+                </div>
+                <p style={{ color: "#00578e", fontSize: "1em", fontWeight: "700", lineHeight: "1.7", flex: 1 }}>
+                  Successfully used for over 35 years around the world including the USA, Canada, Japan, China, Europe, Middle East, South America, Africa…and Australia!{" "}
+                  <Link href="/projects" style={{ color: "#CC2026", fontWeight: "700" }}>See our projects &gt;</Link>
+                </p>
+              </div>
+            </div>
+
+            {/* Stats right */}
+            <div className="grid grid-cols-2 gap-4">
+              {globalStats.map((stat, i) => (
+                <div key={stat.label} className={`stat-card animate-count delay-${(i + 1) * 100}`}>
+                  <div style={{ fontSize: "2.2em", fontWeight: "800", color: "#CC2026", marginBottom: "6px" }}>
+                    {stat.label}
+                  </div>
+                  <div style={{ color: "#666", fontSize: "13px", fontWeight: "600" }}>
+                    {stat.sublabel}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Approved & Accredited Coatings ── */}
+      <section style={{ padding: "56px 0 64px", background: "#fff" }}>
+        <div className="container mx-auto px-4 text-center">
+          <h2 style={{ color: "#CC2026", fontSize: "1.8em", fontWeight: "800", marginBottom: "28px" }}>
+            Approved &amp; Accredited Coatings
+          </h2>
+
+          {/* Accreditation logos — imágenes reales */}
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: "20px 28px",
+              alignItems: "center",
+              marginBottom: "32px",
+            }}
+          >
+            {accreditations.map((acc) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                key={acc.name}
+                src={acc.logo}
+                alt={acc.name}
+                style={{ height: "60px", width: "auto", objectFit: "contain" }}
+              />
+            ))}
+          </div>
+
+          {/* CTA button */}
+          <Link
+            href="/coating-products"
+            style={{
+              background: "#f99d22",
+              color: "#fff",
+              padding: "14px 40px",
+              fontWeight: "700",
+              fontSize: "14px",
+              textDecoration: "none",
+              display: "inline-block",
+              letterSpacing: "1px",
+              borderRadius: "4px",
+              marginBottom: "36px",
+            }}
+          >
+            FULL COATING RANGE
+          </Link>
+
+          {/* Product logos — imágenes originales, sin cards */}
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            style={{
+              gap: "24px 20px",
+              maxWidth: "780px",
+              margin: "0 auto",
+              alignItems: "start",
+            }}
+          >
+            {[
+              { name: "Super Therm®", tagline: "Heat Neutralizer...Thermal Insulation Coating", logo: "/images/logo-super-therm.png", href: "/coating-products/super-therm" },
+              { name: "Rust Grip®", tagline: "World's Toughest Encapsulation Coating", logo: "/images/logo-rust-grip.png", href: "/coating-products/rust-grip" },
+              { name: "HPC® Coating", tagline: "Hot Pipe Insulation Coating", logo: "/images/logo-hpc-coating.png", href: "/coating-products/hpc-coating" },
+              { name: "Enamo Grip®", tagline: "The Ultimate Protection Coating", logo: "/images/logo-enamo-grip.png", href: "/coating-products/enamo-grip" },
+              { name: "Moist Metal Grip®", tagline: "Corrosion Protection in Moisture", logo: "/images/logo-moist-metal-grip.png", href: "/coating-products/moist-metal-grip" },
+              { name: "HPC®-INT Coating", tagline: "Internal Pipe Thermal Insulation", logo: "/images/logo-hpc-int.png", href: "/coating-products/hpc-int-coating" },
+            ].map((p) => (
+              <Link
+                key={p.name}
+                href={p.href}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  textDecoration: "none",
+                  color: "inherit",
+                  padding: "10px 0",
+                }}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={p.logo}
+                  alt={p.name}
+                  style={{ maxWidth: "100%", height: "70px", objectFit: "contain", objectPosition: "left" }}
+                />
+                <p style={{ color: "#555", fontSize: "12px", marginTop: "8px", lineHeight: "1.4", textAlign: "left" }}>
+                  {p.tagline}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Connect and Contact SPI ── */}
+      <section style={{ padding: "60px 0", background: "#f5f5f5" }}>
+        <div className="container mx-auto px-4">
+          <h2 style={{ color: "#CC2026", fontSize: "1.8em", fontWeight: "800", textAlign: "center", marginBottom: "40px" }}>
+            Connect and Contact SPI
+          </h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            {/* Left: radio selectors */}
+            <div>
+              <p style={{ color: "#444", fontWeight: "600", fontSize: "14px", marginBottom: "12px" }}>Industry:</p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "10px 24px", marginBottom: "24px" }}>
+                {["Industrial", "Commercial", "Energy & Mining", "Marine", "Transportation", "Agriculture", "Other"].map((opt) => (
+                  <label key={opt} style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "14px", color: "#444", cursor: "pointer" }}>
+                    <input type="radio" name="industry-select" value={opt} defaultChecked={opt === "Industrial"} />
+                    {opt}
+                  </label>
+                ))}
+              </div>
+              <p style={{ color: "#444", fontWeight: "600", fontSize: "14px", marginBottom: "12px" }}>
+                How did you find out about us?
+              </p>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "10px 24px" }}>
+                {["Google", "Social Media", "Forums", "Referral", "Existing project", "Other"].map((opt) => (
+                  <label key={opt} style={{ display: "flex", alignItems: "center", gap: "6px", fontSize: "14px", color: "#444", cursor: "pointer" }}>
+                    <input type="radio" name="source-select" value={opt} defaultChecked={opt === "Google"} />
+                    {opt}
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            {/* Right: contact form fields */}
+            <div>
+              <form action="/contact" method="POST">
+                <div className="grid grid-cols-2 gap-3" style={{ marginBottom: "12px" }}>
+                  {[
+                    { placeholder: "First Name*", type: "text", name: "firstname" },
+                    { placeholder: "Last Name*", type: "text", name: "lastname" },
+                    { placeholder: "Company Name", type: "text", name: "company" },
+                    { placeholder: "Your Phone*", type: "tel", name: "phone" },
+                    { placeholder: "State*", type: "text", name: "state" },
+                    { placeholder: "Your Email*", type: "email", name: "email" },
+                  ].map((f) => (
+                    <input
+                      key={f.name}
+                      type={f.type}
+                      name={f.name}
+                      placeholder={f.placeholder}
+                      className="form-input"
+                      style={{ background: "#fff" }}
+                    />
+                  ))}
+                </div>
+                <div className="grid grid-cols-2 gap-3" style={{ marginBottom: "12px" }}>
+                  <select name="country" className="form-input" style={{ background: "#fff" }}>
+                    <option>United States</option>
+                    <option>Australia</option>
+                    <option>United Kingdom</option>
+                    <option>Canada</option>
+                    <option>Japan</option>
+                    <option>Other</option>
+                  </select>
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    rows={3}
+                    className="form-input"
+                    style={{ resize: "vertical", background: "#fff" }}
+                  />
+                </div>
+                <button
+                  type="submit"
+                  style={{
+                    background: "#CC2026",
+                    color: "#fff",
+                    padding: "11px 36px",
+                    border: "none",
+                    fontWeight: "700",
+                    fontSize: "14px",
+                    cursor: "pointer",
+                    borderRadius: "2px",
+                    fontFamily: "Montserrat, sans-serif",
+                    letterSpacing: "1px",
+                  }}
+                >
+                  Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
