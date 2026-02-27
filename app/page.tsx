@@ -44,7 +44,7 @@ export default function HomePage() {
               <Link
                 key={p.name}
                 href={p.href}
-                className={`card-modern animate-fade-up delay-${(i + 1) * 100}`}
+                className={`product-logo-item animate-fade-up delay-${(i + 1) * 100}`}
                 style={{
                   display: "flex",
                   flexDirection: "column",
@@ -55,7 +55,7 @@ export default function HomePage() {
                   minHeight: "110px",
                 }}
               >
-                <div style={{ position: "relative", width: "100%", height: "52px" }}>
+                <div className="product-logo-img" style={{ position: "relative", width: "100%", height: "52px" }}>
                   <Image src={p.logo} alt={p.name} fill style={{ objectFit: "contain" }} />
                 </div>
                 <p style={{ color: "#777", fontSize: "11px", marginTop: "8px", lineHeight: "1.3", textAlign: "center" }}>

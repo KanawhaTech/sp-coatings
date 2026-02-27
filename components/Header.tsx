@@ -104,57 +104,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Main header: logo + phone + mobile toggle */}
-      <div style={{ background: "#fff", padding: "10px 0", boxShadow: "0 1px 0 #e5e5e5" }}>
-        <div className="container mx-auto px-4">
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-            {/* Logo */}
-            <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
-              <Image
-                src="/images/header-logo.png"
-                alt="SPI Coatings"
-                width={200}
-                height={70}
-                style={{ height: "60px", width: "auto" }}
-                priority
-              />
-            </Link>
-
-            {/* Desktop: phone number */}
-            <div className="hidden md:flex items-center gap-6">
-              <a
-                href="tel:+19139624848"
-                style={{ color: "#00578e", fontWeight: "700", fontSize: "1.1em", textDecoration: "none" }}
-              >
-                +1 913-962-4848
-              </a>
-            </div>
-
-            {/* Mobile: hamburger */}
-            <div className="md:hidden flex items-center gap-3">
-              <button
-                style={{ background: "none", border: "none", color: "#4A4A4A", cursor: "pointer", padding: "4px", display: "flex", alignItems: "center", justifyContent: "center" }}
-                onClick={() => setMobileOpen(!mobileOpen)}
-                aria-label="Open menu"
-              >
-                <Icon icon="mdi:menu" width={28} height={28} />
-              </button>
-            </div>
-
-            {/* Desktop search icon */}
-            <div className="hidden md:flex items-center">
-              <button
-                style={{ background: "none", border: "none", color: "#4A4A4A", cursor: "pointer", padding: "6px", display: "flex", alignItems: "center", justifyContent: "center" }}
-                aria-label="Search"
-              >
-                <Icon icon="mdi:magnify" width={24} height={24} />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Navigation bar */}
+      {/* Main header: logo left + [hamburger top-right / nav+search bottom-right] */}
       <nav
         style={{
           background: "#fff",
@@ -164,7 +114,35 @@ export default function Header() {
         }}
       >
         <div className="container mx-auto px-4">
-          <ul className="hidden md:flex items-center" style={{ listStyle: "none", margin: 0, padding: 0 }}>
+          <div style={{ display: "flex", alignItems: "stretch" }}>
+            {/* Logo — left, spans both rows */}
+            <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none", flexShrink: 0, paddingRight: "20px" }}>
+              <Image
+                src="/images/header-logo.png"
+                alt="SPI Coatings"
+                width={200}
+                height={70}
+                style={{ height: "64px", width: "auto" }}
+                priority
+              />
+            </Link>
+
+            {/* Right column: two rows */}
+            <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
+              {/* Row 1: hamburger aligned to the right */}
+              <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", padding: "4px 0" }}>
+                <button
+                  style={{ background: "none", border: "none", color: "#4A4A4A", cursor: "pointer", padding: "4px", display: "flex", alignItems: "center" }}
+                  onClick={() => setMobileOpen(!mobileOpen)}
+                  aria-label="Toggle menu"
+                >
+                  <Icon icon="mdi:menu" width={26} height={26} />
+                </button>
+              </div>
+
+              {/* Row 2: nav links + search icon */}
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <ul className="hidden md:flex items-center" style={{ listStyle: "none", margin: 0, padding: 0, flex: 1 }}>
             {/* Coatings */}
             <li
               style={{ position: "relative" }}
@@ -392,14 +370,24 @@ export default function Header() {
                 </Link>
               </li>
             ))}
-          </ul>
+                </ul>
+
+                {/* Search icon — end of nav row */}
+                <button
+                  style={{ background: "none", border: "none", color: "#4A4A4A", cursor: "pointer", padding: "6px", display: "flex", alignItems: "center", flexShrink: 0 }}
+                  aria-label="Search"
+                >
+                  <Icon icon="mdi:magnify" width={22} height={22} />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
 
       {/* Mobile menu */}
       {mobileOpen && (
         <div
-          className="md:hidden"
           style={{
             background: "#fff",
             borderTop: "2px solid #CC2026",

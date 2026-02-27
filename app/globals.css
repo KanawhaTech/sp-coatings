@@ -301,6 +301,18 @@ h1, h2, h3, h4, h5, h6 {
 .delay-500 { animation-delay: 0.5s; }
 .delay-600 { animation-delay: 0.6s; }
 
+/* ── Product logo items (no card, only logo hover) ── */
+.product-logo-item {
+  background: transparent;
+}
+.product-logo-item .product-logo-img {
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+.product-logo-item:hover .product-logo-img {
+  transform: scale(1.08);
+  opacity: 0.85;
+}
+
 /* ── Modern card styles ── */
 .card-modern {
   background: #fff;
