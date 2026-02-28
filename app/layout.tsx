@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
+import ScrollToTop from "@/components/ScrollToTop";
 import { APP_NAME, APP_TAGLINE } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function RootLayout({
         <main>{children}</main>
         <ContactSection />
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );

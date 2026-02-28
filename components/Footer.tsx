@@ -8,7 +8,7 @@ import {
   footerIndustryLinks,
   footerAboutLinks,
 } from "@/lib/data/navigation";
-import { APP_NAME } from "@/lib/constants";
+import { APP_NAME, SUPPORT_EMAIL } from "@/lib/constants";
 
 const footerColumnTitle = (title: string) => (
   <h4
@@ -55,6 +55,11 @@ export default function Footer() {
               <p style={{ fontSize: "13px", lineHeight: "22px", color: "#aaa", marginTop: "8px" }}>
                 <a href="tel:+19139624848" style={{ color: "#f99d22", textDecoration: "none", fontWeight: "600" }}>
                   +1 913-962-4848
+                </a>
+              </p>
+              <p style={{ fontSize: "13px", lineHeight: "22px", color: "#aaa", marginTop: "6px" }}>
+                <a href={`mailto:${SUPPORT_EMAIL}`} style={{ color: "#f99d22", textDecoration: "none", fontWeight: "600" }}>
+                  {SUPPORT_EMAIL}
                 </a>
               </p>
               {/* Social links */}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SUPPORT_EMAIL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "Contact SP Coatings - Get in Touch",
@@ -56,6 +57,18 @@ export default function ContactPage() {
                   style={{ color: "#00578e", fontWeight: "700", fontSize: "1.2em", textDecoration: "none" }}
                 >
                   +1 913-962-4848
+                </a>
+              </div>
+
+              <div style={{ marginBottom: "25px" }}>
+                <h3 style={{ color: "#CC2026", fontWeight: "700", fontSize: "14px", textTransform: "uppercase", marginBottom: "8px" }}>
+                  Email
+                </h3>
+                <a
+                  href={`mailto:${SUPPORT_EMAIL}`}
+                  style={{ color: "#00578e", fontWeight: "700", fontSize: "1em", textDecoration: "none" }}
+                >
+                  {SUPPORT_EMAIL}
                 </a>
               </div>
 
