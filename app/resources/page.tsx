@@ -1,247 +1,516 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import ApprovedAccredited from "@/components/ApprovedAccredited";
 
 export const metadata: Metadata = {
-  title: "Resources - SP Coatings",
-  description: "Access SP Coatings technical data sheets, application guides, coating calculators, glossary and educational resources.",
+  title: "Resources - SPI Coatings",
+  description:
+    "Product & Application Videos, Glossary, SPI Coatings Conversions, SDS, Tech & Application Sheets, Super Therm Testing & Results and more.",
 };
 
-const glossaryTerms = [
+const glossary = [
   {
-    term: "Solar Reflectance (SR)",
-    definition: "The fraction of solar energy reflected by a surface. A value of 1.0 means all solar energy is reflected; 0 means all is absorbed. Also called albedo.",
+    letter: "#",
+    terms: [
+      {
+        term: '"0" Fire and Smoke Spread Rating',
+        definition:
+          "Coatings meeting these testing standards will not add to the spread of a flame. At extreme temperatures, they will begin to burn, but will stop when the heat source is removed.",
+      },
+    ],
   },
   {
-    term: "Thermal Emittance (TE)",
-    definition: "The efficiency with which a surface emits thermal (infrared) radiation. A value of 1.0 means the surface emits as efficiently as a perfect 'black body'.",
+    letter: "A",
+    terms: [
+      {
+        term: "Airless Sprayer",
+        definition:
+          "A coating sprayer using high-pressure to force a liquid through a nozzle and onto a surface. Spraying provides the most even and consistent surface.",
+      },
+    ],
   },
   {
-    term: "Solar Reflectance Index (SRI)",
-    definition: "A measure of a surface's ability to reject solar heat. Calculated from solar reflectance and thermal emittance. A standard black surface has SRI of 0; a standard white surface has SRI of 100.",
+    letter: "B",
+    terms: [
+      {
+        term: "Base and Curing Agent",
+        definition:
+          "Some coatings require the mixing of two chemicals (a base and a curing agent) to initiate the curing process. All epoxies and some polyurethanes are of this type.",
+      },
+      {
+        term: "Batt Insulation",
+        definition:
+          "Includes fiberglass and mineral wool fibre, this is a type of insulation that comes in 'blankets' that are relatively simple to install and provide some R-value.",
+      },
+    ],
   },
   {
-    term: "Corrosion Under Insulation (CUI)",
-    definition: "Corrosion that occurs on steel pipe and vessel surfaces under insulation cladding due to moisture infiltration. A major cause of pipe failures in industrial plants.",
+    letter: "C",
+    terms: [
+      {
+        term: "Ceramic-Based",
+        definition:
+          "A coating using ceramics as a base material to give certain properties, such as reflectivity and heat blockage.",
+      },
+      {
+        term: "Chalking",
+        definition:
+          "Unless UV controlled, many coatings will lose gloss and begin to 'chalk' in sunlight. Chalking is the formation of a powder on the surface of a paint film caused by disintegration of the binder during weathering. Epoxy coatings are particularly prone to chalking and must be over-coated, if used outdoors, with a UV controlled coating.",
+      },
+      {
+        term: "Class A Fire Coating",
+        definition:
+          "Coatings meeting these testing standards will not add to the spread of a flame. At extreme temperatures, they will begin to burn, but will stop when the heat source is removed.",
+      },
+      {
+        term: "Class A Fire Rating",
+        definition:
+          "Coatings meeting these testing standards will not add to the spread of a flame. At extreme temperatures, they will begin to burn, but will stop when the heat source is removed.",
+      },
+      {
+        term: "Condensation",
+        definition:
+          "Condensation is the accumulation of water on surfaces as a result of temperature differences between the surface and the surrounding air. It is a factor of the temperature difference and the percentage of humidity in the air.",
+      },
+      {
+        term: "Crosshatch Method",
+        definition:
+          "A method of spraying on coatings that involves one pass horizontally and then a second pass vertically over the same surface area to ensure complete coverage.",
+      },
+      {
+        term: "Curing Agent",
+        definition:
+          "Some coatings require the mixing of two chemicals (a base and a curing agent) to initiate the curing process. All epoxies and some polyurethanes are of this type.",
+      },
+    ],
   },
   {
-    term: "Dry Film Thickness (DFT)",
-    definition: "The thickness of a coating after all solvents have evaporated and the coating has cured. Measured in microns (μm) or mils.",
+    letter: "D",
+    terms: [
+      {
+        term: "Dew Point",
+        definition:
+          "The temperature at which air must be cooled to reach saturation and begin to condense. As a surface cools, warm moist air is chilled and water vapour in the air condenses into droplets. The greater the difference between the surface temperature and the dew point, the drier is the air.",
+      },
+    ],
   },
   {
-    term: "Intumescent Coating",
-    definition: "A coating that expands dramatically when exposed to heat, forming a thick insulating char layer that protects the substrate from fire damage.",
+    letter: "E",
+    terms: [
+      {
+        term: "Elastomeric",
+        definition:
+          "The elastic, rubber-like properties of a material that will stretch when pulled and will return relatively quickly to its original shape when released.",
+      },
+      {
+        term: "Emulsifying",
+        definition:
+          "To form a suspension of very finely divided oily or resinous liquid in another (watery) liquid.",
+      },
+      {
+        term: "Enamel",
+        definition:
+          "A paint that dries to a hard glossy finish. Technically, enamel is a colored varnish or high-gloss paint. Generally, the term is used for high quality, dirt-resistant paints that may have a sheen level from satin to glossy. These coatings are usually used for more demanding applications.",
+      },
+      {
+        term: "Epoxy",
+        definition:
+          "A synthetic resin that cures or hardens by chemical reaction between components which are mixed together shortly before use. Epoxy coatings are extremely tough, durable and highly resistant to chemicals, abrasion, moisture and alcohol.",
+      },
+    ],
   },
   {
-    term: "VOC (Volatile Organic Compounds)",
-    definition: "Organic chemicals that evaporate readily at room temperature. High VOC coatings contribute to air pollution and have health impacts. Low or zero VOC coatings are preferred for environmental and safety reasons.",
+    letter: "F",
+    terms: [
+      {
+        term: "Film Thickness",
+        definition:
+          "Thickness is usually measured in mils, microns, or millimeters. One mils = one thousand of an inch. The metric equivalent is a micron. One micron = one thousand of a millimeter.\nExamples:\n500 mils = ½ of an inch\n500 microns = ½ of a millimetre\n40 mils = 1 mm\nA business card is usually 8-10 mils thick",
+      },
+    ],
   },
   {
-    term: "Salt Spray Test",
-    definition: "A standardised corrosion test method using a saline (salt water) mist environment. Results are expressed in hours of exposure. Used to compare the corrosion resistance of coatings.",
+    letter: "H",
+    terms: [
+      {
+        term: "Hopper Gun",
+        definition: "Usually air assisted, it is a spray machine used for textured coatings.",
+      },
+    ],
   },
   {
-    term: "Moisture-Cured Polyurethane",
-    definition: "A single-component coating that cures by reacting with moisture in the atmosphere or substrate. Rust Grip® is a moisture-cured polyurethane.",
+    letter: "I",
+    terms: [
+      {
+        term: "Infrared (IR)",
+        definition:
+          "Light that is so red humans cannot see it. The long wave, electromagnetic radiation of radiant heat emitted by all hot objects. On the electromagnetic spectrum, it can be found between microwave radiation and visible light.",
+      },
+      {
+        term: "Insulation Equivalent",
+        definition:
+          "Insulation Equivalent is a system developed to account for all three methods of heat transfer, especially with regard to reflective coatings. The Insulation Equivalent is simply a measure of how well a conventional insulation resists heat transfer through conduction only. The greater the value, the greater the ability of the insulation to resist and absorb conductive heat transfer. The Insulation Equivalent measures the value of a conventional insulation material (i.e. fibreglass or polyurethane foam). The Insulation Equivalent does not consider moisture absorption or air movement.",
+      },
+      {
+        term: "Intumiscent",
+        definition:
+          "Coatings designed to expand and swell when contacted with flames, giving a greater volume and area to absorb heat and repel flames.",
+      },
+    ],
   },
   {
-    term: "Epoxy Polyamide",
-    definition: "A two-component coating system where an epoxy resin is cured with a polyamide hardener. Provides excellent adhesion, chemical resistance and durability.",
+    letter: "L",
+    terms: [
+      {
+        term: "Latex",
+        definition:
+          "A water emulsion of a synthetic rubber or plastic obtained by polymerization and used especially in coatings and adhesives. Generally non-toxic and easy to clean up.",
+      },
+    ],
   },
   {
-    term: "Cool Roof",
-    definition: "A roofing system that delivers higher solar reflectance and higher thermal emittance than a standard roof, resulting in lower roof surface temperatures and reduced building cooling loads.",
+    letter: "M",
+    terms: [
+      {
+        term: "Metallic-Based",
+        definition:
+          "A coating using metallics as a base material to give certain properties such as strength, longevity, and flexibility.",
+      },
+      {
+        term: "Micron and Mils Thickness",
+        definition:
+          "Thickness is usually measured in mils. One mil = one thousand of an inch. The metric equivalent is a micron. One micron = one thousand of a millimeter.\nExamples:\n500 mils = ½ of an inch\n500 microns = ½ of a millimetre\n40 mils = 1 mm\nA business card is usually 8-10 mils thick",
+      },
+      {
+        term: "Moisture-Cure",
+        definition: "Coatings that use moisture from the air to maintain the curing process.",
+      },
+    ],
   },
   {
-    term: "Thermal Conductivity (k-value)",
-    definition: "A measure of a material's ability to conduct heat. Expressed in W/m·K. Lower values indicate better insulating properties.",
+    letter: "P",
+    terms: [
+      {
+        term: "Polyurethane",
+        definition:
+          "Broad class of polymers noted for excellent abrasion and solvent resistance. Can be in solid or cellular form (formed/expanded). Often used as a chemical linkage in finishes, plastic parts and flexible parts. Polyurethane paints are known for their durability.",
+      },
+      {
+        term: "Polyurethane Foam",
+        definition:
+          "A type of polyurethane that exists in cellular form. Commonly used as insulation in a sprayed-on or solid panel form.",
+      },
+      {
+        term: "Pot Life",
+        definition:
+          "The time after which a two-part (or greater) coating can be applied to a surface, before enough of the chemical curing has occurred to compromise adhesion.",
+      },
+      {
+        term: "Pot Sprayer",
+        definition:
+          "An air-assisted hand sprayer using a small container or 'pot' to contain the coating to be applied.",
+      },
+    ],
+  },
+  {
+    letter: "R",
+    terms: [
+      {
+        term: "Reefer",
+        definition: "A refrigerated trailer.",
+      },
+      {
+        term: "R-Value",
+        definition:
+          "The R-value is simply a measure of how well traditional insulation resists heat transfer through conduction only. The greater the value, the greater the ability of the insulation to resist and absorb conductive heat. The R-value does not consider moisture absorption or air movement.",
+      },
+      {
+        term: "Resin",
+        definition:
+          "Any of a class of solid or semi-solid organic products of natural or synthetic origin, generally of high molecular weight with no definite melting point. The material that forms a hard film on the surface after the chemicals have evaporated. Acrylics and urethanes are the common resins used in water-base finishes.",
+      },
+    ],
+  },
+  {
+    letter: "S",
+    terms: [
+      {
+        term: "Saponification",
+        definition:
+          "A chemical decomposition of a paint's binder from a substrate, by alkali and moisture (e.g., new concrete or fresh plaster). Saponified coatings may deteriorate, lose their adhesion, and become discoloured.",
+      },
+      {
+        term: "Self-Leveling",
+        definition:
+          "While curing, self-leveling coatings will spread/even themselves out to a smooth finish, free of brush marks or similar rough spots.",
+      },
+    ],
+  },
+  {
+    letter: "T",
+    terms: [
+      {
+        term: "Thermal Shock",
+        definition:
+          "Thermal shock is the flexing and cracking of concrete due to rapid changes in temperature.",
+      },
+      {
+        term: "Tip Size",
+        definition:
+          "The outlet size on a spray gun. Measured in inches or thousands of an inch.\nExample: Super Therm® requires a tip size of 0.029-0.032 inches, or 29-32 thousands.",
+      },
+      {
+        term: "Two-Component",
+        definition:
+          "Some coatings require the mixing of two chemicals (a base and a curing agent) to initiate the curing process. All epoxies and some polyurethanes are of this type.",
+      },
+      {
+        term: "Two-Part",
+        definition:
+          "Some coatings require the mixing of two chemicals (a base and a curing agent) to initiate the curing process. All epoxies and some polyurethanes are of this type.",
+      },
+    ],
+  },
+  {
+    letter: "U",
+    terms: [
+      {
+        term: "Urethanes",
+        definition:
+          "A type of binder used in coatings. Characterized by excellent flexibility, toughness, and chemical resistance.",
+      },
+      {
+        term: "Ultraviolet (UV)",
+        definition:
+          "Short wavelength light that is beyond the visible spectrum at the violet end; rays of light that are invisible to the human eye but can damage objects, thus creating the need for UV-controlled coatings for outdoor use.",
+      },
+      {
+        term: "Ultraviolet (UV) Controlled or Ultraviolet (UV) Protected",
+        definition:
+          "UV controlled coatings contain components that prevent the breakdown of the coating, due to the damaging effects of UV rays.",
+      },
+    ],
+  },
+  {
+    letter: "V",
+    terms: [
+      {
+        term: "Visual Light",
+        definition:
+          "The portion of the electromagnetic spectrum that can be detected by the human eye. It has a wavelength longer than ultraviolet light and shorter than x-rays.",
+      },
+      {
+        term: "Visual Wavelength",
+        definition:
+          "The portion of the electromagnetic spectrum that can be detected by the human eye. It has a wavelength longer than ultraviolet light and shorter than x-rays.",
+      },
+    ],
+  },
+  {
+    letter: "W",
+    terms: [
+      {
+        term: "Water-Based or Water-Borne",
+        definition:
+          "Coatings that use water soluble components as carriers. Are generally easy to use and clean up.",
+      },
+    ],
   },
 ];
 
-const conversionData = [
-  { from: "Microns (μm)", to: "Mils", formula: "Divide by 25.4", example: "100 μm = 3.94 mils" },
-  { from: "Mils", to: "Microns (μm)", formula: "Multiply by 25.4", example: "4 mils = 101.6 μm" },
-  { from: "m²/L", to: "sq ft/gal", formula: "Multiply by 40.75", example: "8 m²/L = 326 sq ft/gal" },
-  { from: "°C", to: "°F", formula: "(°C × 9/5) + 32", example: "100°C = 212°F" },
-  { from: "°F", to: "°C", formula: "(°F - 32) × 5/9", example: "212°F = 100°C" },
+const quickLinks = [
+  { label: "Product & Application Videos", href: "/resources#videos" },
+  { label: "Glossary", href: "/resources#glossary" },
+  { label: "Industry Uses", href: "/industries" },
+  { label: "SPI Coatings Conversions", href: "/resources#conversions" },
+  { label: "Temperature & Area Conversions", href: "/resources#conversions" },
+  { label: "Distributors", href: "/distributors" },
+  { label: "SDS, Tech & Application Sheet", href: "/contact" },
+  { label: "Super Therm Testing & Results", href: "/coating-products/super-therm" },
+  { label: "Gallery", href: "/projects" },
 ];
 
 export default function ResourcesPage() {
   return (
     <div>
-      {/* Hero */}
-      <div
-        style={{
-          background: "linear-gradient(135deg, #00578e 0%, #333 100%)",
-          color: "#fff",
-          padding: "70px 0",
-          textAlign: "center",
-        }}
-      >
+      {/* Breadcrumb */}
+      <div style={{ background: "#f5f5f5", borderBottom: "1px solid #e5e5e5", padding: "10px 0" }}>
         <div className="container mx-auto px-4">
-          <h1 style={{ fontSize: "2.8em", fontWeight: "800", marginBottom: "15px" }}>Resources</h1>
-          <p style={{ fontSize: "1.2em", color: "rgba(255,255,255,0.85)", maxWidth: "700px", margin: "0 auto" }}>
-            Technical data sheets, application guides, educational videos, glossary and coating calculators.
+          <p style={{ fontSize: "13px", color: "#666", margin: 0 }}>
+            <Link href="/" style={{ color: "#00578e", textDecoration: "none" }}>
+              Home
+            </Link>
+            {" › "}
+            <span style={{ color: "#888" }}>Resources</span>
           </p>
         </div>
       </div>
 
-      {/* Resource Categories */}
-      <section style={{ padding: "70px 0", background: "#fff" }}>
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {[
-              {
-                title: "Technical Data Sheets",
-                description: "Download detailed technical data sheets for all SP Coatings products, including specifications, coverage rates and application instructions.",
-                icon: "📄",
-                href: "#tds",
-              },
-              {
-                title: "Application Guides",
-                description: "Step-by-step application guides for proper surface preparation and coating application to ensure maximum performance.",
-                icon: "📋",
-                href: "#guides",
-              },
-              {
-                title: "Educational Videos",
-                description: "Watch SP Coatings educational videos covering product applications, technical demonstrations and case studies.",
-                icon: "🎥",
-                href: "#videos",
-              },
-              {
-                title: "Coatings Glossary",
-                description: "Comprehensive glossary of coating terminology, testing methods and technical terms used in the coatings industry.",
-                icon: "📚",
-                href: "#glossary",
-              },
-              {
-                title: "Coating Conversions",
-                description: "Quick reference conversion charts for coating measurements, coverage rates and temperature units.",
-                icon: "🔄",
-                href: "#conversions",
-              },
-              {
-                title: "Q&A",
-                description: "Answers to frequently asked questions about SP Coatings products, applications and performance.",
-                icon: "❓",
-                href: "#qa",
-              },
-            ].map((resource) => (
-              <a
-                key={resource.title}
-                href={resource.href}
-                style={{ textDecoration: "none", display: "block" }}
-              >
-                <div
-                  className="hover-shadow"
-                  style={{
-                    border: "1px solid #e5e5e5",
-                    borderRadius: "4px",
-                    padding: "30px",
-                    background: "#fff",
-                    textAlign: "center",
-                    height: "100%",
-                  }}
-                >
-                  <div style={{ fontSize: "3em", marginBottom: "15px" }}>{resource.icon}</div>
-                  <h2 style={{ color: "#00578e", fontWeight: "700", fontSize: "1.1em", marginBottom: "10px" }}>
-                    {resource.title}
-                  </h2>
-                  <p style={{ color: "#666", fontSize: "13px", lineHeight: "1.7" }}>{resource.description}</p>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+      <div className="container mx-auto px-4" style={{ padding: "40px 16px 60px" }}>
+        <h1
+          style={{
+            color: "#00578e",
+            fontWeight: "800",
+            fontSize: "2em",
+            marginBottom: "24px",
+          }}
+        >
+          Resources
+        </h1>
 
-      {/* Glossary */}
-      <section id="glossary" style={{ padding: "70px 0", background: "#f7f7f7" }}>
-        <div className="container mx-auto px-4">
-          <h2 style={{ color: "#00578e", fontSize: "2em", fontWeight: "800", marginBottom: "40px", textAlign: "center" }}>
-            Coatings Glossary
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {glossaryTerms.map((item) => (
-              <div
-                key={item.term}
+        <hr style={{ border: "none", borderTop: "2px solid #CC2026", marginBottom: "24px" }} />
+
+        {/* Quick links */}
+        <ul style={{ listStyle: "none", paddingLeft: 0, marginBottom: "50px" }}>
+          {quickLinks.map((link) => (
+            <li key={link.label} style={{ marginBottom: "8px" }}>
+              <Link
+                href={link.href}
                 style={{
-                  background: "#fff",
-                  padding: "20px 25px",
-                  borderRadius: "4px",
-                  border: "1px solid #e5e5e5",
-                  borderLeft: "4px solid #00578e",
+                  color: "#00578e",
+                  fontWeight: "700",
+                  fontSize: "14px",
+                  textDecoration: "none",
                 }}
               >
-                <h3 style={{ color: "#CC2026", fontWeight: "700", fontSize: "1em", marginBottom: "8px" }}>
-                  {item.term}
-                </h3>
-                <p style={{ color: "#555", fontSize: "13px", lineHeight: "1.7" }}>{item.definition}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-      {/* Conversions */}
-      <section id="conversions" style={{ padding: "70px 0", background: "#fff" }}>
-        <div className="container mx-auto px-4">
-          <h2 style={{ color: "#00578e", fontSize: "2em", fontWeight: "800", marginBottom: "40px", textAlign: "center" }}>
-            Coatings Conversions
-          </h2>
-          <div style={{ overflowX: "auto" }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "14px" }}>
-              <thead>
-                <tr style={{ background: "#00578e", color: "#fff" }}>
-                  <th style={{ padding: "15px 20px", textAlign: "left", fontWeight: "700" }}>From</th>
-                  <th style={{ padding: "15px 20px", textAlign: "left", fontWeight: "700" }}>To</th>
-                  <th style={{ padding: "15px 20px", textAlign: "left", fontWeight: "700" }}>Formula</th>
-                  <th style={{ padding: "15px 20px", textAlign: "left", fontWeight: "700" }}>Example</th>
-                </tr>
-              </thead>
-              <tbody>
-                {conversionData.map((row, i) => (
-                  <tr
-                    key={row.from}
-                    style={{ background: i % 2 === 0 ? "#f7f7f7" : "#fff", borderBottom: "1px solid #e5e5e5" }}
+        {/* Glossary */}
+        <div id="glossary" style={{ marginBottom: "50px" }}>
+          {glossary.map((section) => (
+            <div key={section.letter} style={{ marginBottom: "24px" }}>
+              <h3
+                style={{
+                  color: "#00578e",
+                  fontWeight: "800",
+                  fontSize: "1.1em",
+                  borderBottom: "1px solid #e5e5e5",
+                  paddingBottom: "6px",
+                  marginBottom: "14px",
+                }}
+              >
+                {section.letter}
+              </h3>
+              {section.terms.map((item) => (
+                <div key={item.term} style={{ marginBottom: "14px" }}>
+                  <p style={{ color: "#333", fontWeight: "700", fontSize: "14px", marginBottom: "4px" }}>
+                    {item.term}
+                  </p>
+                  <p
+                    style={{
+                      color: "#555",
+                      fontSize: "14px",
+                      lineHeight: "1.8",
+                      margin: 0,
+                      whiteSpace: "pre-line",
+                    }}
                   >
-                    <td style={{ padding: "12px 20px", fontWeight: "600", color: "#333" }}>{row.from}</td>
-                    <td style={{ padding: "12px 20px", color: "#555" }}>{row.to}</td>
-                    <td style={{ padding: "12px 20px", color: "#00578e", fontWeight: "600" }}>{row.formula}</td>
-                    <td style={{ padding: "12px 20px", color: "#666" }}>{row.example}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                    {item.definition}
+                  </p>
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
-      </section>
 
-      {/* Contact for TDS */}
-      <section style={{ padding: "60px 0", background: "#CC2026", textAlign: "center" }}>
-        <div className="container mx-auto px-4">
-          <h2 style={{ color: "#fff", fontSize: "1.8em", fontWeight: "800", marginBottom: "15px" }}>
-            Need Technical Data Sheets or Application Guides?
-          </h2>
-          <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1em", marginBottom: "30px" }}>
-            Contact SP Coatings or your local authorised distributor for product documentation and technical support.
-          </p>
-          <Link
-            href="/contact"
+        {/* Conversions */}
+        <div id="conversions" style={{ marginBottom: "50px" }}>
+          <h2
             style={{
-              background: "#fff",
-              color: "#CC2026",
-              padding: "12px 30px",
-              borderRadius: "20px",
-              textDecoration: "none",
-              fontWeight: "700",
-              fontSize: "14px",
+              color: "#00578e",
+              fontWeight: "800",
+              fontSize: "1.2em",
+              marginBottom: "20px",
             }}
           >
-            CONTACT US
-          </Link>
+            Metric / Imperial Conversion Charts
+          </h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Celsius to Fahrenheit */}
+            <div
+              style={{
+                background: "#f7f7f7",
+                border: "1px solid #e5e5e5",
+                padding: "20px",
+                borderTop: "3px solid #CC2026",
+              }}
+            >
+              <h3
+                style={{
+                  color: "#00578e",
+                  fontWeight: "700",
+                  fontSize: "14px",
+                  marginBottom: "12px",
+                }}
+              >
+                Degrees Celsius to Fahrenheit
+              </h3>
+              <p style={{ color: "#444", fontSize: "13px", lineHeight: "1.8", fontFamily: "monospace" }}>
+                °F = ( °C * [ 9 / 5 ] ) + 32
+                <br />
+                °C = ( °F – 32 ) * ( 5 / 9 )
+              </p>
+            </div>
+
+            {/* Mils to Microns */}
+            <div
+              style={{
+                background: "#f7f7f7",
+                border: "1px solid #e5e5e5",
+                padding: "20px",
+                borderTop: "3px solid #CC2026",
+              }}
+            >
+              <h3
+                style={{
+                  color: "#00578e",
+                  fontWeight: "700",
+                  fontSize: "14px",
+                  marginBottom: "12px",
+                }}
+              >
+                Mils to Microns
+              </h3>
+              <p style={{ color: "#444", fontSize: "13px", lineHeight: "1.8" }}>
+                1 mil = 25.4 microns
+                <br />
+                1 micron = 0.03937 mils
+              </p>
+            </div>
+
+            {/* Square Feet to Square Meters */}
+            <div
+              style={{
+                background: "#f7f7f7",
+                border: "1px solid #e5e5e5",
+                padding: "20px",
+                borderTop: "3px solid #CC2026",
+              }}
+            >
+              <h3
+                style={{
+                  color: "#00578e",
+                  fontWeight: "700",
+                  fontSize: "14px",
+                  marginBottom: "12px",
+                }}
+              >
+                Square Feet to Square Meters
+              </h3>
+              <p style={{ color: "#444", fontSize: "13px", lineHeight: "1.8" }}>
+                1 m² = 10.76 ft²
+                <br />
+                1 ft² = 0.3048 m²
+              </p>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 }

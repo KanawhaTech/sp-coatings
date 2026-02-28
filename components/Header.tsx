@@ -386,37 +386,155 @@ export default function Header() {
         </div>
       </nav>
 
-      {/* Mobile menu */}
+      {/* Backdrop */}
       {mobileOpen && (
         <div
+          onClick={() => setMobileOpen(false)}
           style={{
-            background: "#fff",
-            borderTop: "2px solid #CC2026",
-            boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+            position: "fixed",
+            inset: 0,
+            background: "rgba(0,0,0,0.45)",
+            zIndex: 998,
           }}
-        >
-          <ul style={{ listStyle: "none", margin: 0, padding: "8px 0" }}>
-            {mobileNavLinks.map((item) => (
-              <li key={item.name} style={{ borderBottom: "1px solid #f0f0f0" }}>
-                <Link
-                  href={item.href}
-                  style={{
-                    display: "block",
-                    padding: "13px 20px",
-                    fontWeight: "600",
-                    fontSize: "14px",
-                    color: "#333",
-                    textDecoration: "none",
-                  }}
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        />
       )}
+
+      {/* Right-side drawer */}
+      <div
+        style={{
+          position: "fixed",
+          top: 0,
+          right: 0,
+          height: "100vh",
+          width: "300px",
+          background: "#e87722",
+          zIndex: 999,
+          overflowY: "auto",
+          transform: mobileOpen ? "translateX(0)" : "translateX(100%)",
+          transition: "transform 0.3s ease",
+          boxShadow: mobileOpen ? "-4px 0 20px rgba(0,0,0,0.3)" : "none",
+        }}
+      >
+        {/* Close button */}
+        <div style={{ display: "flex", justifyContent: "flex-end", padding: "16px 16px 8px" }}>
+          <button
+            onClick={() => setMobileOpen(false)}
+            style={{
+              background: "none",
+              border: "none",
+              color: "#fff",
+              fontSize: "22px",
+              cursor: "pointer",
+              lineHeight: 1,
+              fontWeight: "300",
+            }}
+            aria-label="Close menu"
+          >
+            ✕
+          </button>
+        </div>
+
+        {/* Menu items */}
+        <nav>
+          {/* SPI Global Distributors */}
+          <Link href="/distributors" onClick={() => setMobileOpen(false)}
+            style={{ display: "block", padding: "11px 20px", color: "#fff", fontWeight: "600", fontSize: "14px", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.15)" }}>
+            SPI Global Distributors
+          </Link>
+
+          {/* Our Coatings */}
+          <div style={{ padding: "11px 20px 4px", color: "#fff", fontWeight: "600", fontSize: "14px", borderBottom: "1px solid rgba(255,255,255,0.15)" }}>
+            Our Coatings
+          </div>
+          {[
+            { name: "All Our Coatings", href: "/coating-products" },
+            { name: "Super Therm®", href: "/coating-products/super-therm" },
+            { name: "Rust Grip®", href: "/coating-products/rust-grip" },
+            { name: "HPC® Coating", href: "/coating-products/hpc-coating" },
+            { name: "Omega Fire", href: "/coating-products/omega-fire" },
+            { name: "Enamo Grip", href: "/coating-products/enamo-grip" },
+          ].map((item) => (
+            <Link key={item.href} href={item.href} onClick={() => setMobileOpen(false)}
+              style={{ display: "block", padding: "9px 20px 9px 36px", color: "#fff", fontSize: "13px", fontWeight: "500", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
+              {item.name}
+            </Link>
+          ))}
+
+          {/* Heat Reduction Coatings */}
+          <Link href="/solutions/heat-block-coatings" onClick={() => setMobileOpen(false)}
+            style={{ display: "block", padding: "11px 20px", color: "#fff", fontWeight: "600", fontSize: "14px", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.15)" }}>
+            Heat Reduction Coatings
+          </Link>
+
+          {/* Corrosion Protection */}
+          <Link href="/solutions/corrosion-protection" onClick={() => setMobileOpen(false)}
+            style={{ display: "block", padding: "11px 20px", color: "#fff", fontWeight: "600", fontSize: "14px", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.15)" }}>
+            Corrosion Protection
+          </Link>
+
+          {/* Industries */}
+          <Link href="/industries" onClick={() => setMobileOpen(false)}
+            style={{ display: "block", padding: "11px 20px", color: "#fff", fontWeight: "600", fontSize: "14px", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.15)" }}>
+            Industries
+          </Link>
+
+          {/* Solutions */}
+          <Link href="/solutions" onClick={() => setMobileOpen(false)}
+            style={{ display: "block", padding: "11px 20px", color: "#fff", fontWeight: "600", fontSize: "14px", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.15)" }}>
+            Solutions
+          </Link>
+
+          {/* Projects */}
+          <Link href="/projects" onClick={() => setMobileOpen(false)}
+            style={{ display: "block", padding: "11px 20px", color: "#fff", fontWeight: "600", fontSize: "14px", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.15)" }}>
+            Projects
+          </Link>
+
+          {/* News */}
+          <Link href="/news" onClick={() => setMobileOpen(false)}
+            style={{ display: "block", padding: "11px 20px", color: "#fff", fontWeight: "600", fontSize: "14px", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.15)" }}>
+            News
+          </Link>
+
+          {/* Media */}
+          <Link href="/resources" onClick={() => setMobileOpen(false)}
+            style={{ display: "block", padding: "11px 20px", color: "#fff", fontWeight: "600", fontSize: "14px", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.15)" }}>
+            Media
+          </Link>
+
+          {/* Resources */}
+          <div style={{ padding: "11px 20px 4px", color: "#fff", fontWeight: "600", fontSize: "14px", borderBottom: "1px solid rgba(255,255,255,0.15)" }}>
+            Resources
+          </div>
+          {[
+            { name: "Glossary", href: "/resources#glossary" },
+            { name: "Videos", href: "/resources#videos" },
+            { name: "Video Series", href: "/resources" },
+            { name: "Coatings Conversions", href: "/resources#conversions" },
+            { name: "Q&A", href: "/resources" },
+          ].map((item) => (
+            <Link key={item.name} href={item.href} onClick={() => setMobileOpen(false)}
+              style={{ display: "block", padding: "9px 20px 9px 36px", color: "#fff", fontSize: "13px", fontWeight: "500", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
+              {item.name}
+            </Link>
+          ))}
+
+          {/* About SPI Coatings */}
+          <div style={{ padding: "11px 20px 4px", color: "#fff", fontWeight: "600", fontSize: "14px", borderBottom: "1px solid rgba(255,255,255,0.15)" }}>
+            About SPI Coatings
+          </div>
+          {[
+            { name: "Contact SPI", href: "/contact" },
+            { name: "SPI History", href: "/about" },
+            { name: "Debunked Media", href: "/about" },
+          ].map((item) => (
+            <Link key={item.name} href={item.href} onClick={() => setMobileOpen(false)}
+              style={{ display: "block", padding: "9px 20px 9px 36px", color: "#fff", fontSize: "13px", fontWeight: "500", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
+              {item.name}
+            </Link>
+          ))}
+        </nav>
+      </div>
     </header>
   );
 }
