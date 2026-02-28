@@ -344,26 +344,24 @@ export const productLogos: ProductLogo[] = [
 export const videoResources = [
   {
     title: "Advanced Ceramic Compounds to Block Heat",
-    youtubeId: "dQw4w9WgXcQ",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
-    href: "https://www.youtube.com/@spicoatings",
+    thumbnail: "/images/sddefault.jpg",
+    youtubeId: "mVjXoApx59qU8VkH",
+    href: "https://youtu.be/P45tFzJvwLU?si=mVjXoApx59qU8VkH",
   },
   {
     title: "History of SPI and Ceramics Thermal Coatings",
-    youtubeId: "dQw4w9WgXcQ",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
-    href: "https://www.youtube.com/@spicoatings",
+    thumbnail: "/images/sddefault (1).jpg",
+    youtubeId: "q2Wa_agUW8QIgRR1",
+    href: "https://youtu.be/GzeRBhxcmT4?si=q2Wa_agUW8QIgRR1",
   },
   {
-    title: "Rust Grip® – 3 Million Feet Coated Since 2015",
-    youtubeId: "dQw4w9WgXcQ",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
-    href: "https://www.youtube.com/@spicoatings",
+    title: "Rust Grip Workstrings SPI Coatings",
+    youtubeId: "OAgQ3ovs65YYuOYg",
+    href: "https://youtu.be/bqXo_ZuqXGg?si=OAgQ3ovs65YYuOYg",
   },
   {
-    title: "Innovative Corrosion Encapsulation with Rust Grip®",
-    youtubeId: "dQw4w9WgXcQ",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg",
-    href: "https://www.youtube.com/@spicoatings",
+    title: "Corrosion Encapsulation with Rust Grip Explained®",
+    youtubeId: "jngXYaEVKRQP2tKv",
+    href: "https://youtu.be/gIWq87uotiY?si=jngXYaEVKRQP2tKv",
   },
 ];
