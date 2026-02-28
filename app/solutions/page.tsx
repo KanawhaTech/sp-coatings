@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import ApprovedAccredited from "@/components/ApprovedAccredited";
-
 export const metadata: Metadata = {
   title: "Solutions - SP Coatings",
   description:
@@ -221,7 +219,6 @@ export default function SolutionsPage() {
         </div>
       </div>
 
-      <ApprovedAccredited />
     </div>
   );
 }

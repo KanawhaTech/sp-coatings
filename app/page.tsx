@@ -7,7 +7,6 @@ import {
   productLogos,
   recentNews,
   globalStats,
-  accreditations,
   videoResources,
 } from "@/lib/data/home";
 import { APP_NAME, APP_NAME_FULL, APP_TAGLINE } from "@/lib/constants";
@@ -219,99 +218,6 @@ export default function HomePage() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Approved & Accredited Coatings ── */}
-      <section style={{ padding: "56px 0 64px", background: "#fff" }}>
-        <div className="container mx-auto px-4 text-center">
-          <h2 style={{ color: "#CC2026", fontSize: "1.8em", fontWeight: "800", marginBottom: "28px" }}>
-            Approved &amp; Accredited Coatings
-          </h2>
-
-          {/* Accreditation logos — imágenes reales */}
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "center",
-              gap: "20px 28px",
-              alignItems: "center",
-              marginBottom: "32px",
-            }}
-          >
-            {accreditations.map((acc) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                key={acc.name}
-                src={acc.logo}
-                alt={acc.name}
-                style={{ height: "60px", width: "auto", objectFit: "contain" }}
-              />
-            ))}
-          </div>
-
-          {/* CTA button */}
-          <Link
-            href="/coating-products"
-            style={{
-              background: "#f99d22",
-              color: "#fff",
-              padding: "14px 40px",
-              fontWeight: "700",
-              fontSize: "14px",
-              textDecoration: "none",
-              display: "inline-block",
-              letterSpacing: "1px",
-              borderRadius: "4px",
-              marginBottom: "36px",
-            }}
-          >
-            FULL COATING RANGE
-          </Link>
-
-          {/* Product logos — imágenes originales, sin cards */}
-          <div
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-            style={{
-              gap: "24px 20px",
-              maxWidth: "780px",
-              margin: "0 auto",
-              alignItems: "start",
-            }}
-          >
-            {[
-              { name: "Super Therm®", tagline: "Heat Neutralizer...Thermal Insulation Coating", logo: "/images/logo-super-therm.png", href: "/coating-products/super-therm" },
-              { name: "Rust Grip®", tagline: "World's Toughest Encapsulation Coating", logo: "/images/logo-rust-grip.png", href: "/coating-products/rust-grip" },
-              { name: "HPC® Coating", tagline: "Hot Pipe Insulation Coating", logo: "/images/logo-hpc-coating.png", href: "/coating-products/hpc-coating" },
-              { name: "Enamo Grip®", tagline: "The Ultimate Protection Coating", logo: "/images/logo-enamo-grip.png", href: "/coating-products/enamo-grip" },
-              { name: "Moist Metal Grip®", tagline: "Corrosion Protection in Moisture", logo: "/images/logo-moist-metal-grip.png", href: "/coating-products/moist-metal-grip" },
-              { name: "HPC®-INT Coating", tagline: "Internal Pipe Thermal Insulation", logo: "/images/logo-hpc-int.png", href: "/coating-products/hpc-int-coating" },
-            ].map((p) => (
-              <Link
-                key={p.name}
-                href={p.href}
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-start",
-                  textDecoration: "none",
-                  color: "inherit",
-                  padding: "10px 0",
-                }}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={p.logo}
-                  alt={p.name}
-                  style={{ maxWidth: "100%", height: "70px", objectFit: "contain", objectPosition: "left" }}
-                />
-                <p style={{ color: "#555", fontSize: "12px", marginTop: "8px", lineHeight: "1.4", textAlign: "left" }}>
-                  {p.tagline}
-                </p>
-              </Link>
-            ))}
           </div>
         </div>
       </section>

@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import ApprovedAccredited from "@/components/ApprovedAccredited";
-
 export const metadata: Metadata = {
   title: "SP Interlock: Anti-Slip Coating - SP Coatings",
   description: "SP Interlock is a reactive sealer for stone and concrete — perfect for treating salt damp. Penetrates from inside out to restore and seal aged concrete.",
@@ -359,7 +357,6 @@ export default function SpInterlockPage() {
         </div>
       </div>
 
-      <ApprovedAccredited />
     </div>
   );
 }
