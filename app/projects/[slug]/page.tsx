@@ -100,9 +100,7 @@ export default async function ProjectDetailPage({ params }: Props) {
 
               {/* Full description */}
               <div>
-                <ul style={{ listStyle: "disc", paddingLeft: "20px" }}>
-                  {renderFullDescription(project.fullDescription ?? project.description)}
-                </ul>
+                {renderFullDescription(project.fullDescription ?? project.description)}
               </div>
             </div>
 
