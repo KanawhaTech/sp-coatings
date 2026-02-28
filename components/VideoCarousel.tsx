@@ -7,7 +7,7 @@ import { Icon } from "@iconify/react";
 
 interface VideoItem {
   title: string;
-  thumbnail: string;
+  thumbnail?: string;
   href: string;
 }
 
@@ -39,7 +39,7 @@ export default function VideoCarousel({ items }: { items: VideoItem[] }) {
                 boxShadow: "0 4px 18px rgba(0,0,0,0.18)",
               }}
             >
-              <Image src={video.thumbnail} alt={video.title} fill style={{ objectFit: "cover", transition: "transform 0.45s ease" }} />
+              <Image src={video.thumbnail ?? "/images/sddefault.jpg"} alt={video.title} fill style={{ objectFit: "cover", transition: "transform 0.45s ease" }} />
               <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.38)", transition: "background 0.3s" }} />
               <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <div className="video-card-play">
