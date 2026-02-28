@@ -95,8 +95,8 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Disclaimer / note bar */}
-      <div style={{ background: "#EAEAEA", borderBottom: "1px solid #d5d5d5", padding: "5px 0" }}>
+      {/* Disclaimer / note bar — oculto en mobile */}
+      <div className="hidden md:block" style={{ background: "#EAEAEA", borderBottom: "1px solid #d5d5d5", padding: "5px 0" }}>
         <div className="container mx-auto px-4 text-center">
           <p style={{ color: "#CC2026", fontSize: "13px", fontWeight: "600" }}>
             NOTE: Laboratory and Field project results as stated here may vary according to different climate conditions.
