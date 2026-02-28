@@ -140,15 +140,16 @@ export default function Footer() {
               {footerColumnTitle("Subscribe and Stay in Touch!")}
               <form onSubmit={(e) => e.preventDefault()} style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
                 {[
-                  { placeholder: "First Name", type: "text", name: "sub_firstname" },
-                  { placeholder: "Last Name", type: "text", name: "sub_lastname" },
-                  { placeholder: "Email*", type: "email", name: "sub_email" },
+                  { placeholder: "First Name", name: "sub_firstname" },
+                  { placeholder: "Last Name", name: "sub_lastname" },
+                  { placeholder: "Email*", name: "sub_email" },
                 ].map((f) => (
                   <input
                     key={f.name}
-                    type={f.type}
+                    type="text"
                     name={f.name}
                     placeholder={f.placeholder}
+                    autoComplete="off"
                     style={{
                       padding: "9px 13px",
                       background: "#2a2a2a",
@@ -160,6 +161,8 @@ export default function Footer() {
                       fontFamily: "Montserrat, sans-serif",
                       width: "100%",
                       transition: "border-color 0.2s",
+                      WebkitAppearance: "none",
+                      appearance: "none",
                     }}
                   />
                 ))}
