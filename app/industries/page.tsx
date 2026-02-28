@@ -1,177 +1,191 @@
 import Link from "next/link";
 import type { Metadata } from "next";
+import ApprovedAccredited from "@/components/ApprovedAccredited";
 
 export const metadata: Metadata = {
-  title: "Industries - SPI Coatings",
-  description: "SPI Coatings serves 14+ industries worldwide with proven coating solutions for thermal insulation, corrosion protection, fire resistance and more.",
+  title: "Industry Uses - SPI Coatings",
+  description:
+    "Many industries have different challenges regarding environment threats from heat, condensation, corrosion and fire. SPI Coatings has provided solutions worldwide for over 35 years.",
 };
 
 const industries = [
   {
     name: "Agriculture",
     href: "/industries/agriculture",
-    description: "Protect farm buildings, grain silos and agricultural equipment from heat and corrosion.",
-    icon: "🌾",
-    color: "#4CAF50",
+    description:
+      "Our coatings offer many cost-reducing, profit enhancing agricultural benefits. Farms and poultry houses have improved running costs, effective temperature control and managed humidity levels. This equates into regular feed consumption and increases average livestock weight and profits.",
   },
   {
     name: "Architecture",
     href: "/industries/architecture",
-    description: "Cool roofing solutions, aesthetic finishes and protective coatings for architectural applications.",
-    icon: "🏛️",
-    color: "#00578e",
+    description:
+      "Architects are always looking for sustainable, energy savings, environmentally friendly and long term solutions to enhance their designs and help their clients. With our coatings you can design knowing SPI Coatings have roof, ceiling, walls and floor products covered.",
   },
   {
     name: "Aviation",
     href: "/industries/aviation",
-    description: "High-performance coatings for hangars, runways, aircraft support facilities and equipment.",
-    icon: "✈️",
-    color: "#1565C0",
+    description:
+      "Protection in the aviation industry with Super Therm® is extensive. The environmentally friendly energy saving cool ceramic coating protects a range of important assets. From Airport Protection, Electronics Protection, Barrack walls/roofs, Aircraft Hangars, Trucks and Vehicles, Supply Boxes and Storage Containers, Tanks, Engine room behind the cockpit, Coat the engine manifold and tail pipe.",
   },
   {
     name: "Commercial & Industrial",
     href: "/industries/commercial-industrial",
-    description: "Complete coating solutions for factories, warehouses and commercial facilities.",
-    icon: "🏭",
-    color: "#795548",
+    description:
+      "Japan is one of the largest applicators of our solar heat block coatings systems. Corporations have embraced the rewards of application of Super Therm® and the financial returns plus other benefits such as thermal shock asset management, employee comfort and more. With the important of environmental sustainability, reducing overheads and improving productivity our coatings systems are world leaders on every continent.",
   },
   {
     name: "Construction",
     href: "/industries/construction",
-    description: "Protective and insulative coatings for new construction and renovation projects.",
-    icon: "🏗️",
-    color: "#FF8F00",
+    description:
+      "As the construction industry looks for better ways to build with guaranteed, long term solutions on buildings they are seeing the benefits of our coatings. Insulation, corrosion, condensation, fire proofing and much more can be addressed whether it's new construction or a retrofit, we have the coatings to suit all constructions needs.",
   },
   {
-    name: "Cool & Cold Storage",
+    name: "Cold & Cool Storage",
     href: "/industries/cool-cold-storage",
-    description: "Thermal insulation coatings to reduce energy consumption in refrigerated storage facilities.",
-    icon: "❄️",
-    color: "#0097A7",
+    description:
+      "Cold chain solutions require careful management. This includes freezers and chillers. With the running costs of refrigeration climbing annually SPI Coatings have a series of coatings that will ease the tide and give your company a significant saving and protection. Our coatings assist with condensation, corrosion, and insulation that work in all environments to guarantee to save you energy. Refrigeration trucks, reefers and more have shown significant fuel savings with the application of Super Therm®.",
   },
   {
     name: "Energy & Mining",
     href: "/industries/energy-mining",
-    description: "Hot pipe coatings, corrosion protection and insulation for energy and mining operations.",
-    icon: "⚡",
-    color: "#F57F17",
+    description:
+      "The Energy and Mining industries have a significant environmental challenges. Our range of coatings have proven worldwide they can handle the harshest, toughest and most enduring environmental challenges; providing solutions for heat, moisture, corrosion and more. There's a diverse range of our coatings' combinations that make powerful and effective systems to suit any need on oil fields, gas rigs and other related energy industrial needs. With the only coatings for live pipe application, SPI Coatings have got you covered!",
   },
   {
     name: "Marine",
     href: "/industries/marine",
-    description: "Anti-corrosion and protective coatings for ships, offshore platforms and marine structures.",
-    icon: "🚢",
-    color: "#0D47A1",
+    description:
+      "Without doubt the marine environment is one of the biggest challenges for everyone. Corrosion is a big issue and we have the perfect solutions with Rust Grip®. Rust Grip® corrosion protection coating has withstood 15,000 hours of seaspray testing with perfect results. We also tackle both submersed corrosion with Moist Metal Grip along with biofouling with our hard coatings saving you thousands in slipping and biofoul contamination costs. Contact us regarding corrosion and moisture management.",
   },
   {
-    name: "Defence & Military",
+    name: "Military & Defence",
     href: "/industries/defence-military",
-    description: "Specialised coatings for military vehicles, infrastructure and defence installations.",
-    icon: "🛡️",
-    color: "#33691E",
-  },
-  {
-    name: "Infrastructure",
-    href: "/industries/infrastructure",
-    description: "Protecting bridges, dams, highways and public infrastructure for extended service life.",
-    icon: "🌉",
-    color: "#37474F",
+    description:
+      "The military have a significant range of assets far and wide. SPI Coatings can assist with buildings, barrack walls and roofs, storage, transportation, hangars and any lead or asbestos based issues. We are able to also help with storage tanks, heat control, exhaust pipe protection, engine rooms and other heat related issues with our coatings systems.",
   },
   {
     name: "Residential",
     href: "/industries/residential",
-    description: "Passive cooling solutions for homes — reduce heat gain and lower energy bills.",
-    icon: "🏠",
-    color: "#E91E63",
+    description:
+      "With the price of energy going up and up, people are looking to better and more effective ways to protect their homes and offices against the harsh Australian sun while reducing costs. While solar panels takes a front line to power savings, many results around the world show how Super Therm® are reducing power by blocking solar heat entering the building. No tricks, no gimmicks…our coatings give you the best outcomes available in the marketplace with 96.1% solar heat block proven over 30 years.",
   },
   {
     name: "Shipping Containers",
     href: "/industries/shipping-containers",
-    description: "Thermal insulation and corrosion protection for shipping containers and modular units.",
-    icon: "📦",
-    color: "#FF5722",
+    description:
+      "Shipping containers are a very viable option for storage and living nowadays. Effective solar insulation of large steel containers allows for little compromise of internal spaces. Super Therm® has widely become accepted as an outstanding solution to block solar heat, reduce condensation, add corrosion protection and protect shipping containers generally.",
   },
   {
     name: "Transportation",
     href: "/industries/transportation",
-    description: "Protective coatings for rail, road and transportation infrastructure and vehicles.",
-    icon: "🚛",
-    color: "#607D8B",
+    description:
+      "Transportation has a range of different challenges regarding heat management. SPI Coatings helps buses, trucks, aircraft, RV's and more. Independent tests have shown our coatings reduced refrigerated trailer fuel consumption. Super Therm® is also is used to stop heat transfer from engine mounts and much more.",
   },
   {
-    name: "Warehouse",
+    name: "Warehouses",
     href: "/industries/warehouse",
-    description: "Roof and wall insulation coatings to reduce heat and lower air conditioning costs in warehouses.",
-    icon: "🏢",
-    color: "#9C27B0",
+    description:
+      "Reduce the solar heat, save energy in your warehouse during summer. Here's some tips to help you save energy and increase your warehouse efficiency. Finding a way to save energy in warehouses during summer is an easy solution. Improve efficiency, reduce your emissions, create employee comfort and protect your assets. Super Therm® helps you work towards Net Zero Carbon emissions.",
   },
 ];
 
 export default function IndustriesPage() {
   return (
     <div>
-      {/* Hero */}
-      <div
-        style={{
-          background: "linear-gradient(135deg, #00578e 0%, #1a1a1a 100%)",
-          color: "#fff",
-          padding: "70px 0",
-          textAlign: "center",
-        }}
-      >
+      {/* Breadcrumb */}
+      <div style={{ background: "#f5f5f5", borderBottom: "1px solid #e5e5e5", padding: "10px 0" }}>
         <div className="container mx-auto px-4">
-          <h1 style={{ fontSize: "2.8em", fontWeight: "800", marginBottom: "15px" }}>Industries We Serve</h1>
-          <p style={{ fontSize: "1.2em", color: "rgba(255,255,255,0.85)", maxWidth: "700px", margin: "0 auto" }}>
-            SPI Coatings provides proven coating solutions across 14+ industries worldwide. From marine to mining,
-            aviation to agriculture — we have a coating for every challenge.
+          <p style={{ fontSize: "13px", color: "#666", margin: 0 }}>
+            <Link href="/" style={{ color: "#00578e", textDecoration: "none" }}>Home</Link>
+            {" › "}
+            <span style={{ color: "#888" }}>Industry Uses</span>
           </p>
         </div>
       </div>
 
-      {/* Industries Grid */}
-      <section style={{ padding: "70px 0", background: "#fff" }}>
+      {/* Header */}
+      <div style={{ padding: "40px 0 20px" }}>
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {industries.map((industry) => (
-              <Link
-                key={industry.name}
-                href={industry.href}
-                style={{ textDecoration: "none", display: "block" }}
+          <h1 style={{ color: "#00578e", fontWeight: "800", fontSize: "2em", marginBottom: "16px" }}>
+            Industry Uses
+          </h1>
+          <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9", maxWidth: "820px", marginBottom: "30px" }}>
+            Many industries have different challenges and challenges regarding environment threats from heat,
+            condensation, corrosion and fire. Each situation needs to be assessed before recommendations can be made
+            regarding the use of our specialised coatings systems. Please contact us for your specific need, if you
+            have questions or a requirement for your industry or business challenge. Our coatings have provided
+            solutions worldwide for over 35 years.
+          </p>
+
+          {/* Quick nav tags */}
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "40px" }}>
+            {industries.map((ind) => (
+              <a
+                key={ind.href}
+                href={`#${ind.href.split("/").pop()}`}
+                style={{
+                  background: "#f0f0f0",
+                  color: "#333",
+                  padding: "6px 14px",
+                  borderRadius: "2px",
+                  fontSize: "13px",
+                  fontWeight: "600",
+                  textDecoration: "none",
+                  border: "1px solid #ddd",
+                }}
               >
-                <div
-                  className="hover-lift"
-                  style={{
-                    border: "1px solid #e5e5e5",
-                    borderRadius: "4px",
-                    padding: "30px",
-                    background: "#fff",
-                    borderLeft: `5px solid ${industry.color}`,
-                    height: "100%",
-                  }}
-                >
-                  <div style={{ fontSize: "2.5em", marginBottom: "15px" }}>{industry.icon}</div>
-                  <h2
-                    style={{
-                      color: industry.color,
-                      fontWeight: "700",
-                      fontSize: "1.2em",
-                      marginBottom: "10px",
-                    }}
-                  >
-                    {industry.name}
-                  </h2>
-                  <p style={{ color: "#666", fontSize: "13px", lineHeight: "1.7" }}>
-                    {industry.description}
-                  </p>
-                  <p style={{ color: "#CC2026", fontWeight: "700", fontSize: "12px", marginTop: "15px" }}>
-                    LEARN MORE →
-                  </p>
-                </div>
-              </Link>
+                {ind.name}
+              </a>
             ))}
           </div>
+
+          <hr style={{ border: "none", borderTop: "2px solid #CC2026", marginBottom: "40px" }} />
+        </div>
+      </div>
+
+      {/* Industries list */}
+      <section style={{ paddingBottom: "60px" }}>
+        <div className="container mx-auto px-4">
+          {industries.map((industry, i) => (
+            <div
+              key={industry.href}
+              id={industry.href.split("/").pop()}
+              style={{
+                paddingBottom: "36px",
+                marginBottom: "36px",
+                borderBottom: i < industries.length - 1 ? "1px solid #e5e5e5" : "none",
+              }}
+            >
+              <h3
+                style={{
+                  color: "#00578e",
+                  fontWeight: "700",
+                  fontSize: "1.15em",
+                  marginBottom: "10px",
+                }}
+              >
+                {industry.name}
+              </h3>
+              <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9", marginBottom: "10px" }}>
+                {industry.description}
+              </p>
+              <Link
+                href={industry.href}
+                style={{
+                  color: "#CC2026",
+                  fontWeight: "700",
+                  fontSize: "13px",
+                  textDecoration: "none",
+                }}
+              >
+                See More &gt;
+              </Link>
+            </div>
+          ))}
         </div>
       </section>
+
+      <ApprovedAccredited />
     </div>
   );
 }
