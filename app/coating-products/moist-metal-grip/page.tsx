@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Moist Metal Grip - Wet Surface Corrosion Coating - SPI Coatings",
+  title: "Moist Metal Grip - Wet Surface Corrosion Coating - SP Coatings",
   description: "Moist Metal Grip applies directly to wet, damp or contaminated metal surfaces without surface preparation. Primer and topcoat in one.",
 };
 

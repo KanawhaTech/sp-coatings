@@ -2,8 +2,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Resources - SPI Coatings",
-  description: "Access SPI Coatings technical data sheets, application guides, coating calculators, glossary and educational resources.",
+  title: "Resources - SP Coatings",
+  description: "Access SP Coatings technical data sheets, application guides, coating calculators, glossary and educational resources.",
 };
 
 const glossaryTerms = [
@@ -92,7 +92,7 @@ export default function ResourcesPage() {
             {[
               {
                 title: "Technical Data Sheets",
-                description: "Download detailed technical data sheets for all SPI Coatings products, including specifications, coverage rates and application instructions.",
+                description: "Download detailed technical data sheets for all SP Coatings products, including specifications, coverage rates and application instructions.",
                 icon: "📄",
                 href: "#tds",
               },
@@ -104,7 +104,7 @@ export default function ResourcesPage() {
               },
               {
                 title: "Educational Videos",
-                description: "Watch SPI Coatings educational videos covering product applications, technical demonstrations and case studies.",
+                description: "Watch SP Coatings educational videos covering product applications, technical demonstrations and case studies.",
                 icon: "🎥",
                 href: "#videos",
               },
@@ -122,7 +122,7 @@ export default function ResourcesPage() {
               },
               {
                 title: "Q&A",
-                description: "Answers to frequently asked questions about SPI Coatings products, applications and performance.",
+                description: "Answers to frequently asked questions about SP Coatings products, applications and performance.",
                 icon: "❓",
                 href: "#qa",
               },
@@ -224,7 +224,7 @@ export default function ResourcesPage() {
             Need Technical Data Sheets or Application Guides?
           </h2>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1em", marginBottom: "30px" }}>
-            Contact SPI Coatings or your local authorised distributor for product documentation and technical support.
+            Contact SP Coatings or your local authorised distributor for product documentation and technical support.
           </p>
           <Link
             href="/contact"

@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Super Base - High-Performance Primer - SPI Coatings",
+  title: "Super Base - High-Performance Primer - SP Coatings",
   description: "Super Base is a high-performance primer and base coat that improves adhesion of topcoats on difficult substrates.",
 };
 

@@ -156,7 +156,7 @@ export default function ProjectsClient() {
             Want to Add Your Project?
           </h2>
           <p style={{ color: "#666", fontSize: "1em", marginBottom: "30px" }}>
-            Contact SPI Coatings to discuss your coating project and get expert advice.
+            Contact SP Coatings to discuss your coating project and get expert advice.
           </p>
           <Link href="/contact" className="btn-primary">
             GET IN TOUCH

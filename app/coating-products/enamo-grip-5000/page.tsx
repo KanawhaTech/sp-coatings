@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Enamo Grip 5000® - Enhanced Chemical Resistance - SPI Coatings",
+  title: "Enamo Grip 5000® - Enhanced Chemical Resistance - SP Coatings",
   description: "Enamo Grip 5000® offers enhanced chemical resistance over standard Enamo Grip for the most demanding industrial environments.",
 };
 

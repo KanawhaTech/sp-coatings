@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact SPI Coatings - Get in Touch",
-  description: "Contact SPI Coatings for product information, technical support, distributor enquiries or to request a quote.",
+  title: "Contact SP Coatings - Get in Touch",
+  description: "Contact SP Coatings for product information, technical support, distributor enquiries or to request a quote.",
 };
 
 export default function ContactPage() {
@@ -18,7 +18,7 @@ export default function ContactPage() {
         }}
       >
         <div className="container mx-auto px-4">
-          <h1 style={{ fontSize: "2.8em", fontWeight: "800", marginBottom: "15px" }}>Contact SPI Coatings</h1>
+          <h1 style={{ fontSize: "2.8em", fontWeight: "800", marginBottom: "15px" }}>Contact SP Coatings</h1>
           <p style={{ fontSize: "1.2em", color: "rgba(255,255,255,0.85)", maxWidth: "700px", margin: "0 auto" }}>
             Get in touch with our team for product information, technical support, distributor enquiries or to request a quote.
           </p>

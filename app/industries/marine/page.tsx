@@ -2,7 +2,7 @@ import IndustryPage from "@/components/IndustryPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Marine Industry Coatings - SPI Coatings",
+  title: "Marine Industry Coatings - SP Coatings",
   description: "Anti-corrosion and protective coatings for marine vessels, offshore platforms and marine structures. World's Coating Innovator.",
 };
 
@@ -11,7 +11,7 @@ export default function MarinePage() {
     <IndustryPage
       name="Marine"
       description="Superior corrosion protection and insulation coatings for ships, offshore platforms, port structures and marine equipment."
-      longDescription="The marine environment is one of the most corrosive on earth. Constant exposure to salt water, high humidity, wave action and UV radiation destroys conventional coatings quickly and leads to rapid deterioration of steel and concrete structures. SPI Coatings has been providing proven marine coating solutions for over 35 years, protecting everything from small vessels to the world's largest casino boat. Our coatings are trusted by shipyards, offshore operators and port authorities worldwide."
+      longDescription="The marine environment is one of the most corrosive on earth. Constant exposure to salt water, high humidity, wave action and UV radiation destroys conventional coatings quickly and leads to rapid deterioration of steel and concrete structures. SP Coatings has been providing proven marine coating solutions for over 35 years, protecting everything from small vessels to the world's largest casino boat. Our coatings are trusted by shipyards, offshore operators and port authorities worldwide."
       challenges={[
         "Constant salt water and salt spray exposure causing accelerated corrosion",
         "High humidity environments accelerating metal corrosion rates",

@@ -2,7 +2,7 @@ import IndustryPage from "@/components/IndustryPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Architecture Industry Coatings - SPI Coatings",
+  title: "Architecture Industry Coatings - SP Coatings",
   description: "Cool roofing solutions, aesthetic finishes and protective coatings for architectural applications.",
 };
 
@@ -11,7 +11,7 @@ export default function ArchitecturePage() {
     <IndustryPage
       name="Architecture"
       description="Cool roofing systems, decorative finishes and protective coatings that meet both performance and aesthetic requirements for architectural projects."
-      longDescription="Modern architecture demands coatings that perform both functionally and aesthetically. Green building ratings, energy efficiency targets and long-term durability requirements all influence coating selection. SPI Coatings offers a range of products that help buildings achieve green building certifications, reduce operating energy costs and maintain their appearance over decades. Our coatings have been used on landmark buildings worldwide."
+      longDescription="Modern architecture demands coatings that perform both functionally and aesthetically. Green building ratings, energy efficiency targets and long-term durability requirements all influence coating selection. SP Coatings offers a range of products that help buildings achieve green building certifications, reduce operating energy costs and maintain their appearance over decades. Our coatings have been used on landmark buildings worldwide."
       challenges={[
         "Meeting green building energy efficiency requirements",
         "Urban heat island effect increasing cooling demands",

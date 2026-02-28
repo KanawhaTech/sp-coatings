@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SP Liquid Membrane® - Elastomeric Waterproof Membrane - SPI Coatings",
+  title: "SP Liquid Membrane® - Elastomeric Waterproof Membrane - SP Coatings",
   description: "SP Liquid Membrane® is an elastomeric waterproof membrane coating for roofs, terraces and below-grade concrete.",
 };
 

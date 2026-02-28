@@ -16,18 +16,18 @@ export const newsArticles: NewsArticle[] = [
     category: "Research & Development",
     image: "/images/news/175-years-rd.jpg",
     summary:
-      "SPI Coatings reflects on a remarkable legacy of coating research, development and innovation spanning over 175 combined years of experience in the industry.",
+      "SP Coatings reflects on a remarkable legacy of coating research, development and innovation spanning over 175 combined years of experience in the industry.",
     content: `> "Block the heat before it enters. Stop corrosion before it starts."
 >
-> — J.E. Pritchett, President SPI Coatings
+> — J.E. Pritchett, President SP Coatings
 
-SPI Coatings has accumulated over **175 years of combined research and development experience** with insulation and corrosion protection coatings. This extraordinary depth of knowledge — spread across the entire SPI team — represents an unmatched foundation of ceramic coating science, field application expertise and industrial problem-solving.
+SP Coatings has accumulated over **175 years of combined research and development experience** with insulation and corrosion protection coatings. This extraordinary depth of knowledge — spread across the entire SPI team — represents an unmatched foundation of ceramic coating science, field application expertise and industrial problem-solving.
 
 ### The Foundation: NASA Research 1989–1995
 
-Between 1989 and 1995, SPI Coatings founder J.E. Pritchett worked directly with NASA in a six-year research programme focused on ceramic compound behaviour. This work identified which ceramic structures function in **thin films** for radiative heat blocking and which are required for **thick insulation systems** — a distinction that still separates SPI products from all competitors.
+Between 1989 and 1995, SP Coatings founder J.E. Pritchett worked directly with NASA in a six-year research programme focused on ceramic compound behaviour. This work identified which ceramic structures function in **thin films** for radiative heat blocking and which are required for **thick insulation systems** — a distinction that still separates SPI products from all competitors.
 
-The knowledge gained from this NASA partnership remains proprietary to SPI Coatings. No other manufacturer has replicated this level of fundamental ceramic research applied to industrial coatings.
+The knowledge gained from this NASA partnership remains proprietary to SP Coatings. No other manufacturer has replicated this level of fundamental ceramic research applied to industrial coatings.
 
 ### What 175 Years of R&D Means
 
@@ -42,7 +42,7 @@ This is not simply years in business. The 175 years represents the **cumulative 
 
 ### Why This Matters for Customers
 
-When a customer applies SPI Coatings products, they are accessing the deepest knowledge base available in the industrial coatings industry. Our products perform as claimed because they are built on verified science — not marketing claims.
+When a customer applies SP Coatings products, they are accessing the deepest knowledge base available in the industrial coatings industry. Our products perform as claimed because they are built on verified science — not marketing claims.
 
 This is why SPI products have been independently validated across thousands of real-world installations, from the Hoover Dam to Pemex offshore platforms in the Gulf of Mexico, from Japanese industrial facilities to Antarctic research stations.
 
@@ -50,7 +50,7 @@ This is why SPI products have been independently validated across thousands of r
 
 Most insulation coating manufacturers entered the market by copying the superficial appearance of ceramic coatings — without understanding the underlying physics. A thick coating cannot block radiative heat the way a properly engineered thin ceramic film can. The physics doesn't allow it.
 
-SPI Coatings is the only manufacturer that has developed **both** thin-film and thick-film ceramic systems, each engineered for a completely different heat-control function. This dual capability reflects 37 years of continuous ceramic insulation research — not four years, not marketing hype.`,
+SP Coatings is the only manufacturer that has developed **both** thin-film and thick-film ceramic systems, each engineered for a completely different heat-control function. This dual capability reflects 37 years of continuous ceramic insulation research — not four years, not marketing hype.`,
   },
   {
     slug: "nasas-2024-spinoff-magazine-super-therm",
@@ -118,9 +118,9 @@ A thick film applied to a rooftop will absorb the same amount of solar radiation
 
 A thin ceramic film engineered with the correct ceramic compounds will reflect and block the IR, visual and UV radiation before it is absorbed. The heat never enters the structure.
 
-### The SPI Coatings Difference
+### The SP Coatings Difference
 
-SPI Coatings is the **only insulation coating manufacturer** that has developed both thin-film and thick-film ceramic systems, each engineered for a completely different heat-control function.
+SP Coatings is the **only insulation coating manufacturer** that has developed both thin-film and thick-film ceramic systems, each engineered for a completely different heat-control function.
 
 | System | Product | Function | Film Thickness |
 |--------|---------|----------|----------------|
@@ -135,7 +135,7 @@ When specifying an insulation coating, the starting question must be: **What typ
 
 - **Hot climate rooftop, storage tank or building envelope?** → Use Super Therm® (thin film, blocks radiative solar heat)
 - **Hot operating pipe, vessel or process equipment?** → Use HPC® Coating (thick film, controls conducted process heat)
-- **Both problems on the same asset?** → SPI Coatings has the complete system
+- **Both problems on the same asset?** → SP Coatings has the complete system
 
 No other manufacturer can answer this question with two independently validated, scientifically engineered systems.`,
   },
@@ -146,8 +146,8 @@ No other manufacturer can answer this question with two independently validated,
     category: "Case Study",
     image: "/images/news/georgia-pacific-energy-star.jpg",
     summary:
-      "Georgia Pacific achieved EPA ENERGY STAR programme recognition through the application of SPI Coatings' HPC® live hot pipe coating system — without shutting down production.",
-    content: `Georgia Pacific has achieved **EPA ENERGY STAR programme recognition** through the energy savings delivered by SPI Coatings' **HPC® Coating** applied to their hot process piping systems.
+      "Georgia Pacific achieved EPA ENERGY STAR programme recognition through the application of SP Coatings' HPC® live hot pipe coating system — without shutting down production.",
+    content: `Georgia Pacific has achieved **EPA ENERGY STAR programme recognition** through the energy savings delivered by SP Coatings' **HPC® Coating** applied to their hot process piping systems.
 
 This recognition represents one of the most significant validations of HPC® Coating's real-world energy-saving performance — independently verified by the United States Environmental Protection Agency.
 
@@ -210,11 +210,11 @@ The result was passenger discomfort, high air conditioning costs and a challenge
 
 ### The Super Therm® Solution
 
-SPI Coatings' Super Therm® was applied to the exterior surfaces of the boarding bridges. The principle is direct:
+SP Coatings' Super Therm® was applied to the exterior surfaces of the boarding bridges. The principle is direct:
 
 > "If it doesn't absorb the heat, then there is no heat transfer to the inside of the passenger walkways."
 >
-> — Timothy Cappel, SPI Coatings Vice President of Business Development and Technology
+> — Timothy Cappel, SP Coatings Vice President of Business Development and Technology
 
 Super Therm® blocks solar radiation — infrared, visual and UV — before it is absorbed by the metal surface. Rather than slowing heat transmission, it prevents the heat from entering the structure in the first place.
 
@@ -230,7 +230,7 @@ For a metal surface that previously reached 93°C in summer sun, being within 1�
 
 ### The Verdict
 
-> "SPI Coatings was definitely the firm that just knocked it out of the park for us."
+> "SP Coatings was definitely the firm that just knocked it out of the park for us."
 >
 > "It's obviously well worth that for the benefits we derive."
 >
@@ -240,7 +240,7 @@ For a metal surface that previously reached 93°C in summer sun, being within 1�
 
 > Super Therm® can last **25 to 30 years** with Enamo Grip® in extreme weather conditions.
 >
-> — Timothy Cappel, SPI Coatings Vice President of Business Development and Technology
+> — Timothy Cappel, SP Coatings Vice President of Business Development and Technology
 
 The Las Vegas airport project is now a reference installation demonstrating Super Therm® performance in one of the most extreme heat environments in North America.`,
   },
@@ -251,12 +251,12 @@ The Las Vegas airport project is now a reference installation demonstrating Supe
     category: "Industry",
     image: "/images/news/sspc-presentation.jpg",
     summary:
-      "SPI Coatings' Arin Shahmoradian presents to the SSPC on insulative coatings and the proper engineering selection of thin-film vs. thick-film systems for industrial applications.",
-    content: `SPI Coatings' **Arin Shahmoradian** presented to the **SSPC (Society for Protective Coatings)** on the subject of insulative coatings fit for purpose — a technical presentation addressing one of the most misunderstood topics in the industrial coatings industry.
+      "SP Coatings' Arin Shahmoradian presents to the SSPC on insulative coatings and the proper engineering selection of thin-film vs. thick-film systems for industrial applications.",
+    content: `SP Coatings' **Arin Shahmoradian** presented to the **SSPC (Society for Protective Coatings)** on the subject of insulative coatings fit for purpose — a technical presentation addressing one of the most misunderstood topics in the industrial coatings industry.
 
 ### The Core Message
 
-> "SPI Coatings insulative coating system replaces conventional concrete and metal jacket systems which can cause severe CUI (Corrosion Under Insulation)."
+> "SP Coatings insulative coating system replaces conventional concrete and metal jacket systems which can cause severe CUI (Corrosion Under Insulation)."
 >
 > — Arin Shahmoradian
 
@@ -273,9 +273,9 @@ Conventional pipe insulation works by surrounding a hot pipe with a low-conducti
 
 CUI is estimated to be responsible for between **40-60% of all pipe failures** in process industries. The hidden nature of corrosion under jacketed insulation makes it one of the most dangerous and costly problems in industrial maintenance.
 
-### The SPI Coatings Solution
+### The SP Coatings Solution
 
-SPI Coatings' **HPC® Coating** and related thick-film ceramic systems eliminate the CUI problem by replacing jacket insulation with a directly-applied, monolithic ceramic coating. Benefits include:
+SP Coatings' **HPC® Coating** and related thick-film ceramic systems eliminate the CUI problem by replacing jacket insulation with a directly-applied, monolithic ceramic coating. Benefits include:
 
 - **No hidden spaces** for moisture accumulation
 - **Direct visibility** of the pipe surface — inspection without removal
@@ -287,7 +287,7 @@ SPI Coatings' **HPC® Coating** and related thick-film ceramic systems eliminate
 
 The SSPC presentation emphasised the engineering discipline required to specify insulative coatings correctly. The key question is always: what type of heat are you controlling, and what is the operating temperature range?
 
-SPI Coatings offers a complete system for every application:
+SP Coatings offers a complete system for every application:
 
 | Operating Temperature | Product | Application |
 |-----------------------|---------|-------------|
@@ -299,7 +299,7 @@ SPI Coatings offers a complete system for every application:
 
 ### The SSPC Recognition
 
-Being invited to present at the SSPC — the leading professional society for protective coatings — reflects the industry's recognition of SPI Coatings' technical leadership in insulative coating systems.`,
+Being invited to present at the SSPC — the leading professional society for protective coatings — reflects the industry's recognition of SP Coatings' technical leadership in insulative coating systems.`,
   },
   {
     slug: "rust-grip-workstrings-corrosion-protection",

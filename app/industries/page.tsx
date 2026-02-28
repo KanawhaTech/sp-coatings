@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import ApprovedAccredited from "@/components/ApprovedAccredited";
 
 export const metadata: Metadata = {
-  title: "Industry Uses - SPI Coatings",
+  title: "Industry Uses - SP Coatings",
   description:
-    "Many industries have different challenges regarding environment threats from heat, condensation, corrosion and fire. SPI Coatings has provided solutions worldwide for over 35 years.",
+    "Many industries have different challenges regarding environment threats from heat, condensation, corrosion and fire. SP Coatings has provided solutions worldwide for over 35 years.",
 };
 
 const industries = [
@@ -19,7 +19,7 @@ const industries = [
     name: "Architecture",
     href: "/industries/architecture",
     description:
-      "Architects are always looking for sustainable, energy savings, environmentally friendly and long term solutions to enhance their designs and help their clients. With our coatings you can design knowing SPI Coatings have roof, ceiling, walls and floor products covered.",
+      "Architects are always looking for sustainable, energy savings, environmentally friendly and long term solutions to enhance their designs and help their clients. With our coatings you can design knowing SP Coatings have roof, ceiling, walls and floor products covered.",
   },
   {
     name: "Aviation",
@@ -43,13 +43,13 @@ const industries = [
     name: "Cold & Cool Storage",
     href: "/industries/cool-cold-storage",
     description:
-      "Cold chain solutions require careful management. This includes freezers and chillers. With the running costs of refrigeration climbing annually SPI Coatings have a series of coatings that will ease the tide and give your company a significant saving and protection. Our coatings assist with condensation, corrosion, and insulation that work in all environments to guarantee to save you energy. Refrigeration trucks, reefers and more have shown significant fuel savings with the application of Super Therm®.",
+      "Cold chain solutions require careful management. This includes freezers and chillers. With the running costs of refrigeration climbing annually SP Coatings have a series of coatings that will ease the tide and give your company a significant saving and protection. Our coatings assist with condensation, corrosion, and insulation that work in all environments to guarantee to save you energy. Refrigeration trucks, reefers and more have shown significant fuel savings with the application of Super Therm®.",
   },
   {
     name: "Energy & Mining",
     href: "/industries/energy-mining",
     description:
-      "The Energy and Mining industries have a significant environmental challenges. Our range of coatings have proven worldwide they can handle the harshest, toughest and most enduring environmental challenges; providing solutions for heat, moisture, corrosion and more. There's a diverse range of our coatings' combinations that make powerful and effective systems to suit any need on oil fields, gas rigs and other related energy industrial needs. With the only coatings for live pipe application, SPI Coatings have got you covered!",
+      "The Energy and Mining industries have a significant environmental challenges. Our range of coatings have proven worldwide they can handle the harshest, toughest and most enduring environmental challenges; providing solutions for heat, moisture, corrosion and more. There's a diverse range of our coatings' combinations that make powerful and effective systems to suit any need on oil fields, gas rigs and other related energy industrial needs. With the only coatings for live pipe application, SP Coatings have got you covered!",
   },
   {
     name: "Marine",
@@ -61,7 +61,7 @@ const industries = [
     name: "Military & Defence",
     href: "/industries/defence-military",
     description:
-      "The military have a significant range of assets far and wide. SPI Coatings can assist with buildings, barrack walls and roofs, storage, transportation, hangars and any lead or asbestos based issues. We are able to also help with storage tanks, heat control, exhaust pipe protection, engine rooms and other heat related issues with our coatings systems.",
+      "The military have a significant range of assets far and wide. SP Coatings can assist with buildings, barrack walls and roofs, storage, transportation, hangars and any lead or asbestos based issues. We are able to also help with storage tanks, heat control, exhaust pipe protection, engine rooms and other heat related issues with our coatings systems.",
   },
   {
     name: "Residential",
@@ -79,7 +79,7 @@ const industries = [
     name: "Transportation",
     href: "/industries/transportation",
     description:
-      "Transportation has a range of different challenges regarding heat management. SPI Coatings helps buses, trucks, aircraft, RV's and more. Independent tests have shown our coatings reduced refrigerated trailer fuel consumption. Super Therm® is also is used to stop heat transfer from engine mounts and much more.",
+      "Transportation has a range of different challenges regarding heat management. SP Coatings helps buses, trucks, aircraft, RV's and more. Independent tests have shown our coatings reduced refrigerated trailer fuel consumption. Super Therm® is also is used to stop heat transfer from engine mounts and much more.",
   },
   {
     name: "Warehouses",

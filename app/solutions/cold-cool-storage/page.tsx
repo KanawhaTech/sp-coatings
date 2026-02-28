@@ -2,7 +2,7 @@ import SolutionPage from "@/components/SolutionPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cold & Cool Storage Solutions - SPI Coatings",
+  title: "Cold & Cool Storage Solutions - SP Coatings",
   description: "Reduce energy costs in refrigerated storage with thermal insulation coatings that block solar heat gain.",
 };
 

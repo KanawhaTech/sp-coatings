@@ -2,8 +2,8 @@ import IndustryPage from "@/components/IndustryPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Construction Industry Coatings - SPI Coatings",
-  description: "Protective and insulative coatings for new construction and renovation projects. SPI Coatings.",
+  title: "Construction Industry Coatings - SP Coatings",
+  description: "Protective and insulative coatings for new construction and renovation projects. SP Coatings.",
 };
 
 export default function ConstructionPage() {
@@ -11,7 +11,7 @@ export default function ConstructionPage() {
     <IndustryPage
       name="Construction"
       description="Protective and insulative coatings for new construction projects, renovations and refurbishment of existing structures."
-      longDescription="The construction industry relies on high-performance coatings to protect new structures from day one and to extend the life of existing buildings during refurbishment. SPI Coatings offers products for every stage of construction — from waterproof membranes and primers to thermal insulation systems and fire protection coatings. Our products help builders and developers meet energy efficiency targets and deliver lasting protection."
+      longDescription="The construction industry relies on high-performance coatings to protect new structures from day one and to extend the life of existing buildings during refurbishment. SP Coatings offers products for every stage of construction — from waterproof membranes and primers to thermal insulation systems and fire protection coatings. Our products help builders and developers meet energy efficiency targets and deliver lasting protection."
       challenges={[
         "Meeting energy efficiency requirements in new construction",
         "Waterproofing of roofs, terraces and below-grade structures",

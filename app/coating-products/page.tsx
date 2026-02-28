@@ -3,8 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Coating Products - SPI Coatings",
-  description: "Explore SPI Coatings full range of thermal insulation, corrosion, fire, sealant and base coatings. Innovative coatings developed with NASA for 35+ years.",
+  title: "Coating Products - SP Coatings",
+  description: "Explore SP Coatings full range of thermal insulation, corrosion, fire, sealant and base coatings. Innovative coatings developed with NASA for 35+ years.",
 };
 
 const quickNav = [

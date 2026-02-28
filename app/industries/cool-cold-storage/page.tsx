@@ -2,7 +2,7 @@ import IndustryPage from "@/components/IndustryPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cool & Cold Storage Coatings - SPI Coatings",
+  title: "Cool & Cold Storage Coatings - SP Coatings",
   description: "Thermal insulation coatings to reduce energy consumption in refrigerated storage and cold chain facilities.",
 };
 
@@ -11,7 +11,7 @@ export default function CoolColdStoragePage() {
     <IndustryPage
       name="Cool & Cold Storage"
       description="Thermal insulation coatings that reduce heat ingress into refrigerated storage facilities, lowering energy consumption and maintaining cold chain integrity."
-      longDescription="Cold storage and refrigerated facilities are among the highest energy consumers in the commercial sector. Keeping products cool requires massive refrigeration loads, and any reduction in the thermal insulation of the building envelope directly increases energy costs. SPI Coatings' Super Therm® dramatically reduces solar heat gain through roofs and walls, reducing the refrigeration load and delivering significant energy savings in cold storage operations."
+      longDescription="Cold storage and refrigerated facilities are among the highest energy consumers in the commercial sector. Keeping products cool requires massive refrigeration loads, and any reduction in the thermal insulation of the building envelope directly increases energy costs. SP Coatings' Super Therm® dramatically reduces solar heat gain through roofs and walls, reducing the refrigeration load and delivering significant energy savings in cold storage operations."
       challenges={[
         "Enormous refrigeration energy costs from heat ingress through building envelope",
         "Solar heat gain through metal roofs driving up cooling loads",

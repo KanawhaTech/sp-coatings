@@ -3,10 +3,11 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactSection from "@/components/ContactSection";
+import { APP_NAME, APP_TAGLINE } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "SPI Coatings - Energy Savings, Corrosion & Asset Protection",
-  description: "SPI Coatings | Leading Thermal Insulation and Corrosion Coatings. The World's Coating Innovator™. Innovative coatings solutions for energy savings, corrosion protection and more.",
+  title: `${APP_NAME} - Energy Savings, Corrosion & Asset Protection`,
+  description: `${APP_NAME} | Leading Thermal Insulation and Corrosion Coatings. ${APP_TAGLINE}. Innovative coatings solutions for energy savings, corrosion protection and more.`,
 };
 
 export default function RootLayout({

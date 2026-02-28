@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SP Texture Coat - SPI Coatings",
+  title: "SP Texture Coat - SP Coatings",
   description: "SP Texture Coat is a textured decorative coating with thermal insulation properties. Ideal for exterior walls and roofs.",
 };
 

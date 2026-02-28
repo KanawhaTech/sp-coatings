@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Super Therm® Solar Heat Reduction Coating - SPI Coatings",
+  title: "Super Therm® Solar Heat Reduction Coating - SP Coatings",
   description: "Super Therm® is the original ceramics thermal insulation coating developed with NASA. Reduces infrared heat, stops heat load. Highest solar heat blocking rating of any ceramic coating.",
 };
 
@@ -13,7 +13,7 @@ export default function SuperThermPage() {
       tagline="The World's #1 Solar Heat Blocking Ceramic Coating — Developed with NASA since 1989"
       category="Thermal Insulation Coatings"
       description="Super Therm® is the original ceramics thermal insulation coating that reduces infrared heat and stops heat load. It's also the only ceramics coating developed with NASA. Super Therm® is the most effective, proven, durable and long lasting ceramics coating on the market — it's the Super Ceramics Thermal Coating!"
-      longDescription="For the best cool roofing options, consider a high solar reflectance value, high emissivity and high thermal reduction. Super Therm® has one of the world's highest total solar heat blocking ratings of 367 to 4 BTUs for a ceramic coating and thermal emittance of 0.91. Between 1989 and 1995, SPI Coatings worked directly with NASA in a six-year research program identifying which ceramic structures function in thin films for radiative heat blocking. That knowledge gap still exists today — there is no other manufacturer with 37 years of continuous ceramic insulation research."
+      longDescription="For the best cool roofing options, consider a high solar reflectance value, high emissivity and high thermal reduction. Super Therm® has one of the world's highest total solar heat blocking ratings of 367 to 4 BTUs for a ceramic coating and thermal emittance of 0.91. Between 1989 and 1995, SP Coatings worked directly with NASA in a six-year research program identifying which ceramic structures function in thin films for radiative heat blocking. That knowledge gap still exists today — there is no other manufacturer with 37 years of continuous ceramic insulation research."
       features={[
         {
           title: "Highest Heat Block Rating",

@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SP Seal Coat - Penetrating Sealer & Primer - SPI Coatings",
+  title: "SP Seal Coat - Penetrating Sealer & Primer - SP Coatings",
   description: "SP Seal Coat is a penetrating sealer and primer for concrete, masonry and porous substrates.",
 };
 

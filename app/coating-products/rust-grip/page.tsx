@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Rust Grip® - Superior Corrosion Protection - SPI Coatings",
+  title: "Rust Grip® - Superior Corrosion Protection - SP Coatings",
   description: "Rust Grip® is a moisture-cured polyurethane that penetrates rust and bonds to corroded surfaces. Single coat, zero zinc, tested to 30,000+ hours salt spray. The paradigm shift in corrosion protection.",
 };
 

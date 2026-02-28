@@ -2,8 +2,8 @@ import SolutionPage from "@/components/SolutionPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Energy Reduction Coatings - SPI Coatings",
-  description: "Reduce energy consumption in buildings and industrial equipment with SPI Coatings thermal insulation solutions.",
+  title: "Energy Reduction Coatings - SP Coatings",
+  description: "Reduce energy consumption in buildings and industrial equipment with SP Coatings thermal insulation solutions.",
 };
 
 export default function EnergyReductionPage() {
@@ -11,7 +11,7 @@ export default function EnergyReductionPage() {
     <SolutionPage
       title="Energy Reduction"
       subtitle="Dramatically reduce energy consumption and carbon emissions through innovative thermal insulation coating technology"
-      description="Energy reduction is the primary driver for most SPI Coatings applications. Whether it's reducing the cooling load on a building, cutting heat loss from industrial piping, or insulating storage tanks to reduce evaporation losses — SPI Coatings provide proven, measurable energy savings. Our coatings are recognised by the US EPA ENERGY STAR programme and have documented energy savings in hundreds of projects worldwide. The typical payback period is 12-24 months, making these coatings an excellent investment."
+      description="Energy reduction is the primary driver for most SP Coatings applications. Whether it's reducing the cooling load on a building, cutting heat loss from industrial piping, or insulating storage tanks to reduce evaporation losses — SP Coatings provide proven, measurable energy savings. Our coatings are recognised by the US EPA ENERGY STAR programme and have documented energy savings in hundreds of projects worldwide. The typical payback period is 12-24 months, making these coatings an excellent investment."
       benefits={[
         "Reduce building cooling costs by up to 40%",
         "Cut industrial pipe heat loss by up to 75%",

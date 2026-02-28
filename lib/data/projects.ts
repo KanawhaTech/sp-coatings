@@ -19,18 +19,18 @@ export const projects: Project[] = [
     industry: "Heavy Industries",
     location: "Gulf of Mexico",
     products: "HPC® Coating, Rust Grip®, Enamo Grip®",
-    partner: "SPI Coatings & CS&A – SPI Coatings Distributor",
+    partner: "SP Coatings & CS&A – SP Coatings Distributor",
     description:
-      "SPI Coatings' application on Pemex Oil's offshore crude piping in the Gulf of Mexico was applied in 2014. This showcases the coatings' ability to withstand harsh oceanic conditions while preventing corrosion and maintaining significant temperature reductions over time including withstanding hurricane winds.",
-    fullDescription: `SPI Coatings' application on **Pemex Oil's offshore crude piping** in the Gulf of Mexico was applied in 2014. This showcases the coatings' ability to withstand harsh oceanic conditions while preventing corrosion and maintaining significant temperature reductions over time including withstanding hurricane winds.
+      "SP Coatings' application on Pemex Oil's offshore crude piping in the Gulf of Mexico was applied in 2014. This showcases the coatings' ability to withstand harsh oceanic conditions while preventing corrosion and maintaining significant temperature reductions over time including withstanding hurricane winds.",
+    fullDescription: `SP Coatings' application on **Pemex Oil's offshore crude piping** in the Gulf of Mexico was applied in 2014. This showcases the coatings' ability to withstand harsh oceanic conditions while preventing corrosion and maintaining significant temperature reductions over time including withstanding hurricane winds.
 
 **Mexico's Pemex Offshore Crude Piping in 2014** with **HPC® Coating**'s fresh application with **Rust Grip®** corrosion prevention and **Enamo Grip®** protective industrial coating. An average temperature reduction of 55% to a surface below 50°C.
 
-**Mexico's Pemex Offshore Crude Piping in 2024** showcasing **HPC® Coating**'s ability to withstand harsh oceanic conditions while providing energy efficiency, reducing maintenance and preventing corrosion and still keeping the average temperature reduction. **No deterioration and no drop in performance.** Photos: CS&A – SPI Coatings Distributor
+**Mexico's Pemex Offshore Crude Piping in 2024** showcasing **HPC® Coating**'s ability to withstand harsh oceanic conditions while providing energy efficiency, reducing maintenance and preventing corrosion and still keeping the average temperature reduction. **No deterioration and no drop in performance.** Photos: CS&A – SP Coatings Distributor
 
-**Mexico's Pemex Offshore Crude Piping in 2024** showcasing **HPC® Coating**'s ability to withstand harsh oceanic conditions while providing energy efficiency, reducing maintenance and preventing corrosion and still keeping the average temperature reduction. **No deterioration and no drop in performance.** Photos: CS&A – SPI Coatings Distributor
+**Mexico's Pemex Offshore Crude Piping in 2024** showcasing **HPC® Coating**'s ability to withstand harsh oceanic conditions while providing energy efficiency, reducing maintenance and preventing corrosion and still keeping the average temperature reduction. **No deterioration and no drop in performance.** Photos: CS&A – SP Coatings Distributor
 
-### Innovative thermal insulation and corrosion protection solutions offered by SPI Coatings
+### Innovative thermal insulation and corrosion protection solutions offered by SP Coatings
 With over 35 years of proven performance in both field and laboratory settings, these coatings are designed to deliver significant energy savings, decarbonization, and long-lasting durability. The range of products, including HPC® Coating and Rust Grip®, provides comprehensive protection against corrosion under insulation (CUI) while maintaining surface temperatures and reducing maintenance costs. This highlights SPI’s commitment to enhancing energy efficiency, asset longevity, and personnel safety in demanding industrial environments.
 
 ### Key Benefits
@@ -84,7 +84,7 @@ The tank coated in 1996, which were recoated with top coat only in 2009, the hea
     industry: "Oil Gas Energy",
     location: "Saudi Arabia",
     products: "Super Therm®",
-    partner: "SPI Coatings",
+    partner: "SP Coatings",
     description:
       "In the Natural Gas tank fields, the sun radiation (UV, Visual and IR) waves heat the skin of the tanks causing a critical increase in psi pressure inside the tanks that causes flaring. Super Therm® was applied to a full tank to compare directly to the identical tanks around it — the Super Therm® tank allowed the interior temperature to drop low enough to stop the flaring.",
     fullDescription: `In the Natural Gas tank fields, the sun radiation (UV, Visual and IR) waves heat the skin of the tanks causing a critical increase in psi pressure inside the tanks that causes flaring. Most all flaring is burned off with a constant flame. This, in itself, is dangerous and is a concern for the safety engineers more so than the loss of gas. Super Therm® was applied to a full tank to compare directly to the identical tanks around it being the same size and shape.
@@ -120,7 +120,7 @@ Super Therm®/Sunshield® reduced flaring on LNG tanks owned by Saudi Arabia's o
     industry: "Oil Gas Energy",
     location: "Global",
     products: "Rust Grip®, Corrosion Encapsulation",
-    partner: "SPI Coatings",
+    partner: "SP Coatings",
     description:
       "A long-term lab and field study by Chevron and Workstrings International tested 18 leading coatings on drill pipes for eight years. Rust Grip® was the top performer. Since 2015, Workstrings has coated over 3,500,000 feet of completion tubulars with zero corrosion downgrades.",
     fullDescription: `### Rust Grip® – Unequaled Corrosion Protection
@@ -162,7 +162,7 @@ Rust Grip® provides a protective film of superior adhesion and flexibility, and
     industry: "Oil Gas Energy",
     location: "Colorado Buff, USA",
     products: "Rust Grip®, Enamo Grip®, Corrosion & Lead Paint Encapsulation",
-    partner: "SPI Coatings",
+    partner: "SP Coatings",
     description:
       "Existing tanks at Suncor Energy in Grand Junction, Colorado had been previously coated with a competitor's products. After failing, RUST GRIP® and ENAMO GRIP were chosen for improved durability, longevity and high reflectivity to reduce heat gain while matching the surrounding landscape colors.",
     fullDescription: `Primer: **RUST GRIP®**
@@ -195,7 +195,7 @@ The RUST GRIP® / ENAMO GRIP polyurethane system proved to meet all requirements
     industry: "Oil Gas Energy",
     location: "Campo Palagua, Colombia",
     products: "HPC® Coating",
-    partner: "SPI Coatings",
+    partner: "SP Coatings",
     description:
       "Case study on how HPC® Coating protects and insulates equipment in the oil and gas industry. Report of product demonstration on temperature conduction pipes, crude storage tank and crude oil flow tank, Campo Palagua, Colombia — August 30, 2018.",
     fullDescription: `Case Study on how HPC® Coating protects and insulates equipment in the oil and gas industry.
@@ -243,7 +243,7 @@ Report of product demonstration HPC® Coating (thermal insulation coating) in te
     industry: "Building",
     location: "Santiago, Chile",
     products: "Super Therm®, Enamo Grip 5000®, Energy Savings",
-    partner: "SPI Coatings and Beta Paints",
+    partner: "SP Coatings and Beta Paints",
     description:
       "HOMY store at Mall Plaza Vespucio was losing sales due to temperatures up to 50°C inside. The 7,000 m² roof had no insulation. Super Therm® was applied to the exterior roof/parking surface — surface temperature dropped from 63°–65°C to 28°–30°C with no store closure required.",
     fullDescription: `### Project
@@ -462,7 +462,7 @@ The conducted test relied on comparison of cooling down the loading space of two
     products: "Rust Grip®, Super Therm®, Enamo Grip®",
     partner: "Superior Products International II, Inc.",
     description:
-      "The three-story Blue Chip Casino is the largest US Coast Guard approved casino vessel ever built in USA at a construction cost of $163 million. SPI Coatings managed and certified all coating applications.",
+      "The three-story Blue Chip Casino is the largest US Coast Guard approved casino vessel ever built in USA at a construction cost of $163 million. SP Coatings managed and certified all coating applications.",
     fullDescription: `The three-story Blue Chip Casino located in Michigan City, Indiana, is the largest US Coast Guard approved casino vessel ever built in USA at a cost of construction budgeted at $163 million.
 
 Managed by and certified all coating application by John Grey and Steve (Superior Products, Inc.) for Superior Products International II, Inc.

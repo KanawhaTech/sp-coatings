@@ -2,7 +2,7 @@ import SolutionPage from "@/components/SolutionPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Asbestos & Lead Paint Encapsulation - SPI Coatings",
+  title: "Asbestos & Lead Paint Encapsulation - SP Coatings",
   description: "Safely encapsulate asbestos and lead paint surfaces, preventing fibre and particle release.",
 };
 
@@ -11,7 +11,7 @@ export default function AsbestosLeadPage() {
     <SolutionPage
       title="Asbestos & Lead Encapsulation"
       subtitle="Safe, cost-effective encapsulation of asbestos and lead paint — eliminating hazardous removal"
-      description="Asbestos and lead paint are widespread in buildings constructed before the 1980s. Removal of these hazardous materials is expensive, disruptive and dangerous. Encapsulation — sealing the material in place with a specially formulated coating — is often a safer and more cost-effective alternative where the substrate is in good condition. SPI Coatings provides encapsulation solutions that seal asbestos fibres and lead particles, preventing their release into the air. Always consult a qualified asbestos hygienist before treating any asbestos-containing material."
+      description="Asbestos and lead paint are widespread in buildings constructed before the 1980s. Removal of these hazardous materials is expensive, disruptive and dangerous. Encapsulation — sealing the material in place with a specially formulated coating — is often a safer and more cost-effective alternative where the substrate is in good condition. SP Coatings provides encapsulation solutions that seal asbestos fibres and lead particles, preventing their release into the air. Always consult a qualified asbestos hygienist before treating any asbestos-containing material."
       benefits={[
         "Eliminates expensive and hazardous asbestos/lead removal",
         "Much lower cost than removal and disposal",

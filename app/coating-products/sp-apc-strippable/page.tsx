@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SP APC Strippable - Temporary Surface Protection - SPI Coatings",
+  title: "SP APC Strippable - Temporary Surface Protection - SP Coatings",
   description: "SP APC Strippable is a removable strippable coating for temporary surface protection during transport, storage and construction.",
 };
 

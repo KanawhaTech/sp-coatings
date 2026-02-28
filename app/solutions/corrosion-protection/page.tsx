@@ -2,7 +2,7 @@ import SolutionPage from "@/components/SolutionPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Corrosion Protection Coatings - SPI Coatings",
+  title: "Corrosion Protection Coatings - SP Coatings",
   description: "Stop corrosion with penetrating encapsulating coatings. Apply to rusted, wet or contaminated surfaces without sandblasting.",
 };
 
@@ -11,7 +11,7 @@ export default function CorrosionProtectionPage() {
     <SolutionPage
       title="Corrosion Protection"
       subtitle="The paradigm shift in corrosion protection — penetrate, encapsulate and protect in a single coat"
-      description="Corrosion costs the global economy trillions of dollars annually. Traditional approaches to corrosion protection — sandblast, prime, topcoat — are effective but enormously expensive and disruptive. Rust Grip® from SPI Coatings represents a paradigm shift: it penetrates into rust and existing corrosion, expands upon curing to seal out air and moisture, and forms a tough, impervious barrier that stops corrosion at the source. Among zinc-free single-coat systems tested in independent studies, Rust Grip® consistently shows the best performance."
+      description="Corrosion costs the global economy trillions of dollars annually. Traditional approaches to corrosion protection — sandblast, prime, topcoat — are effective but enormously expensive and disruptive. Rust Grip® from SP Coatings represents a paradigm shift: it penetrates into rust and existing corrosion, expands upon curing to seal out air and moisture, and forms a tough, impervious barrier that stops corrosion at the source. Among zinc-free single-coat systems tested in independent studies, Rust Grip® consistently shows the best performance."
       benefits={[
         "Apply directly to rusted and corroded surfaces without sandblasting",
         "Single coat provides complete corrosion protection",

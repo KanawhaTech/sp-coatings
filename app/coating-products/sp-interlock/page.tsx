@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import ApprovedAccredited from "@/components/ApprovedAccredited";
 
 export const metadata: Metadata = {
-  title: "SP Interlock: Anti-Slip Coating - SPI Coatings",
+  title: "SP Interlock: Anti-Slip Coating - SP Coatings",
   description: "SP Interlock is a reactive sealer for stone and concrete — perfect for treating salt damp. Penetrates from inside out to restore and seal aged concrete.",
 };
 
@@ -53,7 +53,7 @@ export default function SpInterlockPage() {
                 Make an Enquiry
               </h3>
               <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "12px", marginBottom: "14px" }}>
-                SPI Coatings the home of Super Therm®, Rust Grip® and HPC®!
+                SP Coatings the home of Super Therm®, Rust Grip® and HPC®!
               </p>
               <Link href="/contact" style={{ display: "block", background: "#fff", color: "#CC2026", fontWeight: "700", fontSize: "13px", padding: "9px", borderRadius: "2px", textDecoration: "none" }}>
                 CONTACT US

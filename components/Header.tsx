@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
+import { APP_NAME } from "@/lib/constants";
 import {
   coatingsMenu,
   industriesMenu,
@@ -119,7 +120,7 @@ export default function Header() {
             <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none", flexShrink: 0, paddingRight: "20px" }}>
               <Image
                 src="/images/header-logo.png"
-                alt="SPI Coatings"
+                alt={APP_NAME}
                 width={200}
                 height={70}
                 style={{ height: "64px", width: "auto" }}

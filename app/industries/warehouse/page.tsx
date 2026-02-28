@@ -2,7 +2,7 @@ import IndustryPage from "@/components/IndustryPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Warehouse Coatings - SPI Coatings",
+  title: "Warehouse Coatings - SP Coatings",
   description: "Roof and wall insulation coatings to reduce heat and lower air conditioning costs in warehouses and distribution centres.",
 };
 

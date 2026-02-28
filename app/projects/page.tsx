@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import ProjectsClient from "@/components/ProjectsClient";
 
 export const metadata: Metadata = {
-  title: "Projects - SPI Coatings",
-  description: "Browse SPI Coatings global project portfolio. From the Hoover Dam to marine vessels, see proven performance worldwide.",
+  title: "Projects - SP Coatings",
+  description: "Browse SP Coatings global project portfolio. From the Hoover Dam to marine vessels, see proven performance worldwide.",
 };
 
 export default function ProjectsPage() {
@@ -15,7 +15,7 @@ export default function ProjectsPage() {
           width={1600}
           height={290}
           src="/images/spi-coatings-hpc-offshore-pemex-banners.jpg"
-          alt="SPI Coatings — HPC Offshore"
+          alt="SP Coatings — HPC Offshore"
           style={{ width: "100%", display: "block" }}
         />
       </div>

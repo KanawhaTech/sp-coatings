@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HSC™ Hot Surface Coating - SPI Coatings",
+  title: "HSC™ Hot Surface Coating - SP Coatings",
   description: "HSC™ is a hot surface coating for high-temperature equipment and vessels. Provides thermal insulation and corrosion protection at elevated temperatures.",
 };
 

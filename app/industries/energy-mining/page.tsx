@@ -2,7 +2,7 @@ import IndustryPage from "@/components/IndustryPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Energy & Mining Industry Coatings - SPI Coatings",
+  title: "Energy & Mining Industry Coatings - SP Coatings",
   description: "Hot pipe coatings, corrosion protection and insulation for oil, gas, energy and mining operations worldwide.",
 };
 
@@ -11,7 +11,7 @@ export default function EnergyMiningPage() {
     <IndustryPage
       name="Energy & Mining"
       description="Hot pipe coatings, corrosion protection and thermal insulation solutions for oil, gas, power generation and mining operations."
-      longDescription="Energy production and mining operations subject equipment and infrastructure to extreme conditions — high temperatures, corrosive chemicals, abrasive materials and harsh weather. SPI Coatings has been the trusted partner for energy and mining companies worldwide for over 35 years, providing coating solutions that reduce energy loss, prevent corrosion and extend equipment life. Our HPC® hot pipe coating can be applied to live operating pipes, eliminating the need for costly plant shutdowns."
+      longDescription="Energy production and mining operations subject equipment and infrastructure to extreme conditions — high temperatures, corrosive chemicals, abrasive materials and harsh weather. SP Coatings has been the trusted partner for energy and mining companies worldwide for over 35 years, providing coating solutions that reduce energy loss, prevent corrosion and extend equipment life. Our HPC® hot pipe coating can be applied to live operating pipes, eliminating the need for costly plant shutdowns."
       challenges={[
         "High-temperature process pipes losing energy through uninsulated surfaces",
         "Corrosion of steel equipment in chemically aggressive environments",

@@ -2,8 +2,8 @@ import SolutionPage from "@/components/SolutionPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Heat Management Coatings - SPI Coatings",
-  description: "Manage heat on hot surfaces and equipment in industrial facilities with SPI Coatings thermal management solutions.",
+  title: "Heat Management Coatings - SP Coatings",
+  description: "Manage heat on hot surfaces and equipment in industrial facilities with SP Coatings thermal management solutions.",
 };
 
 export default function HeatManagementPage() {
@@ -11,7 +11,7 @@ export default function HeatManagementPage() {
     <SolutionPage
       title="Heat Management"
       subtitle="Control, contain and manage heat on industrial equipment, vessels and piping systems"
-      description="Heat management in industrial facilities is critical for both energy efficiency and personnel safety. Hot surfaces, process pipes and equipment radiate enormous quantities of heat, both wasting energy and creating burn hazards. SPI Coatings offers a family of products specifically engineered to manage heat on hot industrial equipment — from pipes operating at a few degrees above ambient all the way up to furnaces and equipment operating at 650°C. These coatings can be applied while equipment is in operation, without shutdown."
+      description="Heat management in industrial facilities is critical for both energy efficiency and personnel safety. Hot surfaces, process pipes and equipment radiate enormous quantities of heat, both wasting energy and creating burn hazards. SP Coatings offers a family of products specifically engineered to manage heat on hot industrial equipment — from pipes operating at a few degrees above ambient all the way up to furnaces and equipment operating at 650°C. These coatings can be applied while equipment is in operation, without shutdown."
       benefits={[
         "Dramatically reduce heat loss from process equipment",
         "Apply to operating equipment without shutdown",

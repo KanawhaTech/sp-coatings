@@ -10,6 +10,7 @@ import {
   accreditations,
   videoResources,
 } from "@/lib/data/home";
+import { APP_NAME, APP_NAME_FULL, APP_TAGLINE } from "@/lib/constants";
 
 export default function HomePage() {
   return (
@@ -23,10 +24,10 @@ export default function HomePage() {
       <section style={{ padding: "60px 0 50px", background: "#fff" }}>
         <div className="container mx-auto px-4 text-center">
           <h1 style={{ color: "#CC2026", fontSize: "1.7em", fontWeight: "800", marginBottom: "14px" }}>
-            Welcome to SPI Coatings, Inc. - The World&apos;s Coating Innovator™
+            Welcome to {APP_NAME_FULL} - {APP_TAGLINE}
           </h1>
           <p style={{ fontSize: "14px", color: "#555", maxWidth: "820px", margin: "0 auto 40px", lineHeight: "1.8" }}>
-            SPI Coatings designs, formulates, and manufactures the world&apos;s most innovative coatings and solutions
+            {APP_NAME} designs, formulates, and manufactures the world&apos;s most innovative coatings and solutions
             that solve major industrial problems. We help reduce energy usage, stop corrosion, give personal protection, and so much more.
           </p>
 
@@ -140,7 +141,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
               <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9", marginBottom: "14px" }}>
-                <strong>SPI Coatings</strong> is the only insulation-coating manufacturer that developed both{" "}
+                <strong>SP Coatings</strong> is the only insulation-coating manufacturer that developed both{" "}
                 <strong>thin-film and thick-film ceramic systems</strong>, each engineered for a completely different heat-control function.
               </p>
               <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9", marginBottom: "14px" }}>
@@ -161,7 +162,7 @@ export default function HomePage() {
                 Most insulation-coating suppliers only offer an average-performing thick film and market it as a universal solution. Industry is now discovering the limitation.
               </p>
               <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9", marginBottom: "14px" }}>
-                Between 1989 and 1995, SPI Coatings worked directly with <strong>NASA</strong> in a six-year research program led by the company&apos;s founder, focusing on ceramic compound behaviour. That work identified which ceramic structures function in thin films and which are required for thick insulation systems.
+                Between 1989 and 1995, SP Coatings worked directly with <strong>NASA</strong> in a six-year research program led by the company&apos;s founder, focusing on ceramic compound behaviour. That work identified which ceramic structures function in thin films and which are required for thick insulation systems.
               </p>
               <p style={{ color: "#444", fontSize: "14px", lineHeight: "1.9", marginBottom: "14px" }}>
                 That knowledge gap still exists today.

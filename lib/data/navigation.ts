@@ -120,7 +120,7 @@ export const footerIndustryLinks: NavLink[] = [
 ];
 
 export const footerAboutLinks: NavLink[] = [
-  { name: "About SPI Coatings", href: "/about" },
+  { name: "About SP Coatings", href: "/about" },
   { name: "Global Projects", href: "/projects" },
   { name: "News & Updates", href: "/news" },
   { name: "Resources", href: "/resources" },

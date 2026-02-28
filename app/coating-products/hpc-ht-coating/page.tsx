@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HPC®-HT High Temperature Hot Pipe Coating - SPI Coatings",
+  title: "HPC®-HT High Temperature Hot Pipe Coating - SP Coatings",
   description: "HPC®-HT is a high-temperature pipe coating system rated for pipes operating up to 650°C (1200°F). For extreme temperature industrial applications.",
 };
 

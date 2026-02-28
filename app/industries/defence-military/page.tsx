@@ -2,7 +2,7 @@ import IndustryPage from "@/components/IndustryPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Defence & Military Coatings - SPI Coatings",
+  title: "Defence & Military Coatings - SP Coatings",
   description: "Specialised coatings for military vehicles, infrastructure and defence installations. High performance in extreme conditions.",
 };
 
@@ -11,7 +11,7 @@ export default function DefenceMilitaryPage() {
     <IndustryPage
       name="Defence & Military"
       description="High-performance coating solutions for military vehicles, defence installations and military infrastructure operating in extreme conditions worldwide."
-      longDescription="Defence and military operations demand coating solutions that perform in the most extreme conditions — desert heat, arctic cold, salt water exposure, chemical environments and combat conditions. SPI Coatings has supplied coating solutions to defence organisations worldwide, providing thermal management, corrosion protection and durability in environments where equipment failure is not an option."
+      longDescription="Defence and military operations demand coating solutions that perform in the most extreme conditions — desert heat, arctic cold, salt water exposure, chemical environments and combat conditions. SP Coatings has supplied coating solutions to defence organisations worldwide, providing thermal management, corrosion protection and durability in environments where equipment failure is not an option."
       challenges={[
         "Extreme thermal environments from desert heat to arctic conditions",
         "Corrosion of military vehicles and equipment in marine and chemical environments",

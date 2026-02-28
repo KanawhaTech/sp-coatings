@@ -2,7 +2,7 @@ import SolutionPage from "@/components/SolutionPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Concrete & Flooring Solutions - SPI Coatings",
+  title: "Concrete & Flooring Solutions - SP Coatings",
   description: "Protect and seal concrete floors from abrasion, chemicals and moisture with SPI coating systems.",
 };
 
@@ -11,7 +11,7 @@ export default function ConcreteFlooringPage() {
     <SolutionPage
       title="Concrete & Flooring"
       subtitle="Durable, chemical-resistant floor coating systems for industrial and commercial concrete surfaces"
-      description="Industrial and commercial floors take enormous abuse — forklifts, heavy machinery, chemical spills, heavy foot traffic and temperature extremes all degrade unprotected concrete surfaces rapidly. SPI Coatings' floor coating systems seal concrete, prevent chemical penetration, resist abrasion and provide a safe, cleanable surface. Our systems are used in factories, warehouses, food processing plants, pharmaceutical facilities and commercial kitchens worldwide."
+      description="Industrial and commercial floors take enormous abuse — forklifts, heavy machinery, chemical spills, heavy foot traffic and temperature extremes all degrade unprotected concrete surfaces rapidly. SP Coatings' floor coating systems seal concrete, prevent chemical penetration, resist abrasion and provide a safe, cleanable surface. Our systems are used in factories, warehouses, food processing plants, pharmaceutical facilities and commercial kitchens worldwide."
       benefits={[
         "Protect concrete from chemical spills and penetration",
         "Resist abrasion from forklift and machinery traffic",

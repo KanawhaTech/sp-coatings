@@ -2,7 +2,7 @@ import IndustryPage from "@/components/IndustryPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Residential Passive Cooling - SPI Coatings",
+  title: "Residential Passive Cooling - SP Coatings",
   description: "Passive cooling solutions for homes. Reduce heat gain through roofs and walls to lower air conditioning costs and improve comfort.",
 };
 
@@ -11,7 +11,7 @@ export default function ResidentialPage() {
     <IndustryPage
       name="Residential"
       description="Passive cooling solutions for homes and residential buildings — reduce heat gain, lower energy bills and improve indoor comfort without additional equipment."
-      longDescription="Homeowners worldwide are facing increasing energy costs as summer temperatures rise. Air conditioning is often the largest single energy cost in a household. SPI Coatings' passive cooling solutions dramatically reduce the heat absorbed by roofs and walls, reducing the cooling load on air conditioning systems and improving indoor comfort — all without any mechanical equipment. Our coatings pay for themselves through energy savings."
+      longDescription="Homeowners worldwide are facing increasing energy costs as summer temperatures rise. Air conditioning is often the largest single energy cost in a household. SP Coatings' passive cooling solutions dramatically reduce the heat absorbed by roofs and walls, reducing the cooling load on air conditioning systems and improving indoor comfort — all without any mechanical equipment. Our coatings pay for themselves through energy savings."
       challenges={[
         "High air conditioning costs in hot climates",
         "Heat discomfort in poorly insulated homes",

@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "SP Seal Coat HT - High-Temperature Sealer - SPI Coatings",
+  title: "SP Seal Coat HT - High-Temperature Sealer - SP Coatings",
   description: "SP Seal Coat HT is a high-temperature version of SP Seal Coat for surfaces exposed to elevated temperatures.",
 };
 

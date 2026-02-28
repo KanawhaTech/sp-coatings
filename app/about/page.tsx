@@ -3,8 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About SPI Coatings - The World's Coating Innovator™",
-  description: "SPI Coatings has been designing, formulating and manufacturing the world's most innovative coatings since 1989. Developed with NASA. 37 years of ceramic insulation research.",
+  title: "About SP Coatings - The World's Coating Innovator™",
+  description: "SP Coatings has been designing, formulating and manufacturing the world's most innovative coatings since 1989. Developed with NASA. 37 years of ceramic insulation research.",
 };
 
 export default function AboutPage() {
@@ -21,7 +21,7 @@ export default function AboutPage() {
       >
         <div className="container mx-auto px-4">
           <h1 style={{ fontSize: "2.8em", fontWeight: "800", marginBottom: "15px" }}>
-            About SPI Coatings
+            About SP Coatings
           </h1>
           <p style={{ fontSize: "1.2em", color: "rgba(255,255,255,0.85)", maxWidth: "700px", margin: "0 auto" }}>
             The World&apos;s Coating Innovator™ — over 37 years of research, innovation and proven performance
@@ -58,12 +58,12 @@ export default function AboutPage() {
                 Superior Products International II, Inc.
               </h2>
               <p style={{ color: "#555", fontSize: "1em", lineHeight: "1.8", marginBottom: "15px" }}>
-                SPI Coatings designs, formulates, and manufactures the world&apos;s most innovative coatings and solutions
+                SP Coatings designs, formulates, and manufactures the world&apos;s most innovative coatings and solutions
                 that solve major industrial problems. We help reduce energy usage, stop corrosion, give personal
                 protection, and so much more.
               </p>
               <p style={{ color: "#555", fontSize: "1em", lineHeight: "1.8", marginBottom: "15px" }}>
-                Founded in 1989, SPI Coatings began its journey with a six-year joint research programme with NASA,
+                Founded in 1989, SP Coatings began its journey with a six-year joint research programme with NASA,
                 studying the behaviour of ceramic compounds in thin and thick film applications. That research produced
                 groundbreaking insights that led to the development of Super Therm® — still the world&apos;s leading
                 ceramic thermal insulation coating today.
@@ -74,7 +74,7 @@ export default function AboutPage() {
                 which are required for thick insulation systems — is unmatched in the industry.
               </p>
               <p style={{ color: "#555", fontSize: "1em", lineHeight: "1.8", marginBottom: "25px" }}>
-                Today, SPI Coatings products are used in over 50 countries worldwide, with landmark installations
+                Today, SP Coatings products are used in over 50 countries worldwide, with landmark installations
                 including the Hoover Dam, Harry Reid International Airport in Las Vegas, and 10.3 million square
                 metres of industrial and commercial facilities in Japan alone.
               </p>
@@ -82,7 +82,7 @@ export default function AboutPage() {
             <div>
               <Image
                 src="/images/about-spi.jpg"
-                alt="SPI Coatings Research"
+                alt="SP Coatings Research"
                 width={600}
                 height={450}
                 style={{ width: "100%", height: "auto", borderRadius: "4px", boxShadow: "0 10px 30px rgba(0,0,0,0.15)" }}
@@ -122,7 +122,7 @@ export default function AboutPage() {
                 Developed with NASA since 1989
               </h2>
               <p style={{ color: "#555", fontSize: "1em", lineHeight: "1.8", marginBottom: "15px" }}>
-                Between 1989 and 1995, SPI Coatings worked directly with NASA in a six-year research program led by
+                Between 1989 and 1995, SP Coatings worked directly with NASA in a six-year research program led by
                 the company&apos;s founder. This program focused on ceramic compound behaviour — identifying which ceramic
                 structures function effectively in thin films for radiative heat blocking, and which are required for
                 thick insulation systems.
@@ -157,7 +157,7 @@ export default function AboutPage() {
               marginBottom: "15px",
             }}
           >
-            Why Choose SPI Coatings?
+            Why Choose SP Coatings?
           </h2>
           <p
             style={{
@@ -226,7 +226,7 @@ export default function AboutPage() {
             Ready to Work with the World&apos;s Coating Innovator?
           </h2>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1em", marginBottom: "30px" }}>
-            Contact SPI Coatings or find an authorised distributor in your region.
+            Contact SP Coatings or find an authorised distributor in your region.
           </p>
           <div style={{ display: "flex", gap: "15px", justifyContent: "center", flexWrap: "wrap" }}>
             <Link

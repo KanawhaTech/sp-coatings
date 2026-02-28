@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HPC® Hot Pipe Coating - SPI Coatings",
+  title: "HPC® Hot Pipe Coating - SP Coatings",
   description: "HPC® Coating can be applied to live operating hot pipes up to 232°C (450°F) without shutting down operations. The world's leading hot pipe insulation coating.",
 };
 

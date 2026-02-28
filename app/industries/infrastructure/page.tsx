@@ -2,7 +2,7 @@ import IndustryPage from "@/components/IndustryPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Infrastructure Coatings - SPI Coatings",
+  title: "Infrastructure Coatings - SP Coatings",
   description: "Protecting bridges, dams, highways and public infrastructure for extended service life. Award-winning coatings used on the Hoover Dam.",
 };
 
@@ -11,7 +11,7 @@ export default function InfrastructurePage() {
     <IndustryPage
       name="Infrastructure"
       description="Protecting bridges, dams, tunnels, highways and critical public infrastructure for extended service life with proven coating solutions."
-      longDescription="Critical infrastructure represents enormous national investment. The premature failure of bridges, dams, tunnels and public facilities due to corrosion and deterioration costs governments and taxpayers billions every year. SPI Coatings has been protecting critical infrastructure for over 35 years — most notably with award-winning coatings used on the Hoover Dam. Our products extend the service life of infrastructure, reducing lifecycle costs and protecting public safety."
+      longDescription="Critical infrastructure represents enormous national investment. The premature failure of bridges, dams, tunnels and public facilities due to corrosion and deterioration costs governments and taxpayers billions every year. SP Coatings has been protecting critical infrastructure for over 35 years — most notably with award-winning coatings used on the Hoover Dam. Our products extend the service life of infrastructure, reducing lifecycle costs and protecting public safety."
       challenges={[
         "Corrosion of steel reinforcement and structural steel in bridges and tunnels",
         "Carbonation of concrete causing rebar corrosion in aged infrastructure",

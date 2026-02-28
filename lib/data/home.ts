@@ -355,7 +355,7 @@ export const videoResources = [
     href: "https://youtu.be/GzeRBhxcmT4?si=q2Wa_agUW8QIgRR1",
   },
   {
-    title: "Rust Grip Workstrings SPI Coatings",
+    title: "Rust Grip Workstrings SP Coatings",
     youtubeId: "OAgQ3ovs65YYuOYg",
     href: "https://youtu.be/bqXo_ZuqXGg?si=OAgQ3ovs65YYuOYg",
   },

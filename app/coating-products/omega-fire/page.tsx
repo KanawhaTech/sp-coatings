@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Omega Fire - Intumescent Fire Protection Coating - SPI Coatings",
+  title: "Omega Fire - Intumescent Fire Protection Coating - SP Coatings",
   description: "Omega Fire is an intumescent fire protection coating for structural steel. Expands under heat to provide up to 4 hours fire resistance.",
 };
 

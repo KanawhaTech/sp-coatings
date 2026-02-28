@@ -2,7 +2,7 @@ import SolutionPage from "@/components/SolutionPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Eco Friendly Coatings - SPI Coatings",
+  title: "Eco Friendly Coatings - SP Coatings",
   description: "Low VOC, water-based coating formulations that meet environmental regulations and sustainability goals.",
 };
 
@@ -11,7 +11,7 @@ export default function EcoFriendlyPage() {
     <SolutionPage
       title="Eco Friendly"
       subtitle="Environmentally responsible coatings — low VOC, water-based formulations for sustainable operations"
-      description="Environmental responsibility is at the core of SPI Coatings' product development philosophy. Our coatings are formulated to minimise environmental impact while maximising performance. Most SPI products are water-based with very low VOC content, eliminating the health and environmental risks associated with solvent-based coatings. Furthermore, by reducing energy consumption in buildings and industrial processes, SPI coatings help reduce CO₂ emissions and combat climate change."
+      description="Environmental responsibility is at the core of SP Coatings' product development philosophy. Our coatings are formulated to minimise environmental impact while maximising performance. Most SPI products are water-based with very low VOC content, eliminating the health and environmental risks associated with solvent-based coatings. Furthermore, by reducing energy consumption in buildings and industrial processes, SPI coatings help reduce CO₂ emissions and combat climate change."
       benefits={[
         "Water-based, low VOC formulations — minimal environmental impact",
         "Reduce building energy consumption and CO₂ emissions",

@@ -2,7 +2,7 @@ import SolutionPage from "@/components/SolutionPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Chemical Protection Coatings - SPI Coatings",
+  title: "Chemical Protection Coatings - SP Coatings",
   description: "Chemical-resistant coatings for tanks, pipes and surfaces exposed to aggressive chemicals.",
 };
 
@@ -11,7 +11,7 @@ export default function ChemicalProtectionPage() {
     <SolutionPage
       title="Chemical Protection"
       subtitle="Chemical-resistant coating systems for tanks, vessels, pipes and surfaces in aggressive chemical environments"
-      description="Chemical facilities, water treatment plants, pharmaceutical manufacturers and industrial processors all deal with aggressive chemicals that destroy unprotected surfaces rapidly. SPI Coatings provides a range of chemical-resistant coating systems that protect substrates from acids, alkalis, solvents and specialty chemicals. Our products range from epoxy topcoats for general chemical environments to ultra-high solids tank lining systems for the most aggressive applications."
+      description="Chemical facilities, water treatment plants, pharmaceutical manufacturers and industrial processors all deal with aggressive chemicals that destroy unprotected surfaces rapidly. SP Coatings provides a range of chemical-resistant coating systems that protect substrates from acids, alkalis, solvents and specialty chemicals. Our products range from epoxy topcoats for general chemical environments to ultra-high solids tank lining systems for the most aggressive applications."
       benefits={[
         "Wide range of chemical resistance — acids, alkalis, solvents",
         "Ultra-high solids systems for most aggressive environments",

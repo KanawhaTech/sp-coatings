@@ -2,8 +2,8 @@ import IndustryPage from "@/components/IndustryPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Agriculture Industry Coatings - SPI Coatings",
-  description: "Protect farm buildings, grain silos and agricultural equipment from heat and corrosion with SPI Coatings.",
+  title: "Agriculture Industry Coatings - SP Coatings",
+  description: "Protect farm buildings, grain silos and agricultural equipment from heat and corrosion with SP Coatings.",
 };
 
 export default function AgriculturePage() {
@@ -11,7 +11,7 @@ export default function AgriculturePage() {
     <IndustryPage
       name="Agriculture"
       description="Thermal insulation and corrosion protection coatings for farm buildings, grain silos, irrigation systems and agricultural equipment."
-      longDescription="Agricultural businesses rely on their buildings and equipment to protect crops, livestock and machinery. Heat is a major enemy — heat stress in livestock, heat damage to stored crops and excessive temperatures in farm buildings all reduce productivity and increase costs. Corrosion of metal silos, equipment and infrastructure adds to operating expenses. SPI Coatings provides cost-effective solutions to both challenges, proven over 35 years of agricultural use worldwide."
+      longDescription="Agricultural businesses rely on their buildings and equipment to protect crops, livestock and machinery. Heat is a major enemy — heat stress in livestock, heat damage to stored crops and excessive temperatures in farm buildings all reduce productivity and increase costs. Corrosion of metal silos, equipment and infrastructure adds to operating expenses. SP Coatings provides cost-effective solutions to both challenges, proven over 35 years of agricultural use worldwide."
       challenges={[
         "Excessive heat in livestock buildings causing heat stress",
         "High temperatures in grain storage reducing quality and causing spoilage",

@@ -2,7 +2,7 @@ import SolutionPage from "@/components/SolutionPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Transport Coatings - SPI Coatings",
+  title: "Transport Coatings - SP Coatings",
   description: "Coating solutions for transport vehicles, rail, road and maritime transport infrastructure.",
 };
 
@@ -11,7 +11,7 @@ export default function TransportPage() {
     <SolutionPage
       title="Transport"
       subtitle="Corrosion protection and thermal management coatings for transport vehicles and infrastructure"
-      description="The transport sector encompasses one of the largest inventories of steel in the world — from rail infrastructure and bridges to vehicle fleets and maritime vessels. All of this steel is exposed to the most aggressive corrosive environments: salt water spray on marine routes, de-icing salts on road and rail, and continuous vibration and mechanical stress. SPI Coatings provides high-performance coating solutions that extend the service life of transport infrastructure and vehicle fleets while reducing maintenance costs."
+      description="The transport sector encompasses one of the largest inventories of steel in the world — from rail infrastructure and bridges to vehicle fleets and maritime vessels. All of this steel is exposed to the most aggressive corrosive environments: salt water spray on marine routes, de-icing salts on road and rail, and continuous vibration and mechanical stress. SP Coatings provides high-performance coating solutions that extend the service life of transport infrastructure and vehicle fleets while reducing maintenance costs."
       benefits={[
         "Extend service life of transport infrastructure and vehicles",
         "Reduce maintenance frequency and associated costs",

@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Lining Kote UHS - Ultra-High Solids Lining Coating - SPI Coatings",
+  title: "Lining Kote UHS - Ultra-High Solids Lining Coating - SP Coatings",
   description: "Lining Kote UHS is an ultra-high solids lining coating for tanks, vessels and pipelines handling aggressive chemicals.",
 };
 

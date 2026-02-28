@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HPC®-INT Interior Hot Pipe Coating - SPI Coatings",
+  title: "HPC®-INT Interior Hot Pipe Coating - SP Coatings",
   description: "HPC®-INT is an interior hot pipe coating system for high-temperature insulation on internal pipe surfaces and vessel linings.",
 };
 

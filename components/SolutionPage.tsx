@@ -152,7 +152,7 @@ export default function SolutionPage({
             Ready to Solve Your {title} Challenge?
           </h2>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1em", marginBottom: "30px" }}>
-            Contact SPI Coatings for expert advice on the right coating solution for your specific needs.
+            Contact SP Coatings for expert advice on the right coating solution for your specific needs.
           </p>
           <div style={{ display: "flex", gap: "15px", justifyContent: "center", flexWrap: "wrap" }}>
             <Link

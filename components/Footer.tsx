@@ -8,6 +8,7 @@ import {
   footerIndustryLinks,
   footerAboutLinks,
 } from "@/lib/data/navigation";
+import { APP_NAME } from "@/lib/constants";
 
 const footerColumnTitle = (title: string) => (
   <h4
@@ -38,7 +39,7 @@ export default function Footer() {
               <div style={{ marginBottom: "20px" }}>
                 <Image
                   src="/images/header-logo.png"
-                  alt="SPI Coatings"
+                  alt={APP_NAME}
                   width={160}
                   height={55}
                   style={{ filter: "brightness(0) invert(1)", height: "auto" }}
@@ -125,7 +126,7 @@ export default function Footer() {
 
             {/* Column 4 — About SPI + Subscribe */}
             <div>
-              {footerColumnTitle("About SPI Coatings")}
+              {footerColumnTitle(`About ${APP_NAME}`)}
               <ul style={{ listStyle: "none", margin: 0, padding: 0, marginBottom: "25px" }}>
                 {footerAboutLinks.map((item) => (
                   <li key={item.name} style={{ marginBottom: "5px" }}>

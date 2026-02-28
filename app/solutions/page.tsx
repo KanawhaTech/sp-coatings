@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 import ApprovedAccredited from "@/components/ApprovedAccredited";
 
 export const metadata: Metadata = {
-  title: "Solutions - SPI Coatings",
+  title: "Solutions - SP Coatings",
   description:
-    "SPI Coatings offer a range of solutions that can meet any challenge in the global environment.",
+    "SP Coatings offer a range of solutions that can meet any challenge in the global environment.",
 };
 
 const solutionColumns = [
@@ -142,7 +142,7 @@ export default function SolutionsPage() {
               marginBottom: "10px",
             }}
           >
-            SPI Coatings offer a range of solutions that can meet any challenge in the global
+            SP Coatings offer a range of solutions that can meet any challenge in the global
             environment.
           </p>
           <p

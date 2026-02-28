@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sunshield - Heat Reflective Paint - SPI Coatings",
+  title: "Sunshield - Heat Reflective Paint - SP Coatings",
   description: "Sunshield is a heat reflective paint for roofs and exterior surfaces. Reflects solar heat to reduce cooling costs, improve comfort and extend roof life.",
 };
 

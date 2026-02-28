@@ -2,7 +2,7 @@ import SolutionPage from "@/components/SolutionPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Heat Block Coatings - SPI Coatings",
+  title: "Heat Block Coatings - SP Coatings",
   description: "Block solar radiation and reduce heat gain through roofs and walls using advanced ceramic technology.",
 };
 

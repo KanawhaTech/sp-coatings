@@ -2,7 +2,7 @@ import IndustryPage from "@/components/IndustryPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Commercial & Industrial Coatings - SPI Coatings",
+  title: "Commercial & Industrial Coatings - SP Coatings",
   description: "Complete coating solutions for factories, warehouses and commercial facilities. Energy savings, corrosion protection and more.",
 };
 
@@ -11,7 +11,7 @@ export default function CommercialIndustrialPage() {
     <IndustryPage
       name="Commercial & Industrial"
       description="Comprehensive coating solutions for factories, manufacturing plants, commercial buildings and industrial facilities."
-      longDescription="Commercial and industrial facilities face a wide range of coating challenges — from energy costs driven by inadequately insulated roofs to corrosion of structural steel and equipment. SPI Coatings provides a complete range of products addressing these challenges, with proven installations across 10.3 million square metres of industrial and commercial facilities in Japan alone. Our coatings deliver measurable energy savings and long-term protection."
+      longDescription="Commercial and industrial facilities face a wide range of coating challenges — from energy costs driven by inadequately insulated roofs to corrosion of structural steel and equipment. SP Coatings provides a complete range of products addressing these challenges, with proven installations across 10.3 million square metres of industrial and commercial facilities in Japan alone. Our coatings deliver measurable energy savings and long-term protection."
       challenges={[
         "High energy costs from uninsulated roofs and walls in large buildings",
         "Corrosion of structural steel and equipment reducing asset life",

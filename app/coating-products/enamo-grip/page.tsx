@@ -2,7 +2,7 @@ import ProductPage from "@/components/ProductPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Enamo Grip® - Durable Topcoat - SPI Coatings",
+  title: "Enamo Grip® - Durable Topcoat - SP Coatings",
   description: "Enamo Grip® is a two-component epoxy polyamide topcoat with excellent adhesion, chemical resistance and high gloss finish for industrial and commercial applications.",
 };
 

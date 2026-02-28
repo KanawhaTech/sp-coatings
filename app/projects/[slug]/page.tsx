@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const project = getProjectBySlug(slug);
   if (!project) return { title: "Project Not Found" };
   return {
-    title: `${project.title} – SPI Coatings`,
+    title: `${project.title} – SP Coatings`,
     description: project.description,
   };
 }
@@ -160,7 +160,7 @@ export default async function ProjectDetailPage({ params }: Props) {
                   Make an Enquiry
                 </h3>
                 <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "13px", marginBottom: "16px" }}>
-                  SPI Coatings — home of Super Therm®, Rust Grip® and HPC®!
+                  SP Coatings — home of Super Therm®, Rust Grip® and HPC®!
                 </p>
                 <Link
                   href="/contact"

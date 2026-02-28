@@ -194,7 +194,7 @@ export default function IndustryPage({
             Need a Coating Solution for {name}?
           </h2>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1em", marginBottom: "30px" }}>
-            Contact SPI Coatings or find an authorised distributor for expert advice on the right coating system.
+            Contact SP Coatings or find an authorised distributor for expert advice on the right coating system.
           </p>
           <div style={{ display: "flex", gap: "15px", justifyContent: "center", flexWrap: "wrap" }}>
             <Link

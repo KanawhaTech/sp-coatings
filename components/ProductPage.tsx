@@ -293,7 +293,7 @@ export default function ProductPage({
             Ready to Get Started with {name}?
           </h2>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1em", marginBottom: "30px", maxWidth: "600px", margin: "0 auto 30px" }}>
-            Contact SPI Coatings or find an authorised distributor in your region to learn more about how {name} can solve your coating challenges.
+            Contact SP Coatings or find an authorised distributor in your region to learn more about how {name} can solve your coating challenges.
           </p>
           <div style={{ display: "flex", gap: "15px", justifyContent: "center", flexWrap: "wrap" }}>
             <Link

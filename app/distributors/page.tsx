@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "SPI Global Distributors - Find Your Local Distributor",
-  description: "Find authorised SPI Coatings distributors in your region. Only purchase from authorised representatives displaying the SPI Authorised Logo.",
+  description: "Find authorised SP Coatings distributors in your region. Only purchase from authorised representatives displaying the SPI Authorised Logo.",
 };
 
 const regions = [
@@ -65,7 +65,7 @@ export default function DistributorsPage() {
             SPI Global Distributors
           </h1>
           <p style={{ fontSize: "1.2em", color: "rgba(255,255,255,0.85)", maxWidth: "700px", margin: "0 auto" }}>
-            Find your authorised local SPI Coatings distributor worldwide.
+            Find your authorised local SP Coatings distributor worldwide.
           </p>
         </div>
       </div>
@@ -95,12 +95,12 @@ export default function DistributorsPage() {
                 Find a Distributor in Your Region
               </h2>
               <p style={{ color: "#555", fontSize: "1em", lineHeight: "1.8", marginBottom: "20px" }}>
-                SPI Coatings has an established network of authorised distributors worldwide. Our distributors are
+                SP Coatings has an established network of authorised distributors worldwide. Our distributors are
                 trained in SPI products and can provide technical support, product supply and application guidance
                 in your region.
               </p>
               <p style={{ color: "#555", fontSize: "1em", lineHeight: "1.8", marginBottom: "25px" }}>
-                To find the authorised distributor nearest to you, contact SPI Coatings directly or use the
+                To find the authorised distributor nearest to you, contact SP Coatings directly or use the
                 contact form below. Please include your country and region to enable us to connect you with
                 the most appropriate distributor.
               </p>
@@ -113,7 +113,7 @@ export default function DistributorsPage() {
                 Become an Authorised Distributor
               </h2>
               <p style={{ color: "#555", fontSize: "1em", lineHeight: "1.8", marginBottom: "15px" }}>
-                Are you interested in distributing SPI Coatings products in your region? We are always looking for
+                Are you interested in distributing SP Coatings products in your region? We are always looking for
                 qualified, professional distributors to represent our products worldwide.
               </p>
               <p style={{ color: "#555", fontSize: "1em", lineHeight: "1.8", marginBottom: "20px" }}>
@@ -218,7 +218,7 @@ export default function DistributorsPage() {
             Can&apos;t Find a Distributor in Your Country?
           </h2>
           <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "1em", marginBottom: "30px" }}>
-            Contact SPI Coatings directly. We ship globally and can direct you to the closest authorised representative.
+            Contact SP Coatings directly. We ship globally and can direct you to the closest authorised representative.
           </p>
           <div style={{ display: "flex", gap: "15px", justifyContent: "center", flexWrap: "wrap" }}>
             <Link

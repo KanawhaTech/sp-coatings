@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { newsArticles } from "@/lib/data/news";
 
 export const metadata: Metadata = {
-  title: "News - SPI Coatings",
-  description: "Latest news and updates from SPI Coatings — the World's Coating Innovator.",
+  title: "News - SP Coatings",
+  description: "Latest news and updates from SP Coatings — the World's Coating Innovator.",
 };
 
 const categories = ["All", "Research & Development", "Awards & Recognition", "Technical", "Case Study", "Project", "Industry"];
@@ -24,7 +24,7 @@ export default function NewsPage() {
         <div className="container mx-auto px-4">
           <h1 style={{ fontSize: "2.8em", fontWeight: "800", marginBottom: "15px" }}>News & Updates</h1>
           <p style={{ fontSize: "1.2em", color: "rgba(255,255,255,0.85)", maxWidth: "700px", margin: "0 auto" }}>
-            Transforming the world with innovative coatings — latest news, case studies and research from SPI Coatings.
+            Transforming the world with innovative coatings — latest news, case studies and research from SP Coatings.
           </p>
         </div>
       </div>

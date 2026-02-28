@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getArticleBySlug(slug);
   if (!article) return { title: "Article Not Found" };
   return {
-    title: `${article.title} – SPI Coatings`,
+    title: `${article.title} – SP Coatings`,
     description: article.summary,
   };
 }
@@ -247,7 +247,7 @@ export default async function NewsArticlePage({ params }: Props) {
               </h1>
 
               <p style={{ color: "#888", fontSize: "12px", marginBottom: "28px", fontWeight: "600" }}>
-                {article.date} · SPI Coatings
+                {article.date} · SP Coatings
               </p>
 
               {/* Summary */}
@@ -277,7 +277,7 @@ export default async function NewsArticlePage({ params }: Props) {
                   Make an Enquiry
                 </h3>
                 <p style={{ color: "rgba(255,255,255,0.85)", fontSize: "13px", marginBottom: "16px" }}>
-                  SPI Coatings — home of Super Therm®, Rust Grip® and HPC®!
+                  SP Coatings — home of Super Therm®, Rust Grip® and HPC®!
                 </p>
                 <Link
                   href="/contact"

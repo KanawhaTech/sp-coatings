@@ -2,7 +2,7 @@ import IndustryPage from "@/components/IndustryPage";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Aviation Industry Coatings - SPI Coatings",
+  title: "Aviation Industry Coatings - SP Coatings",
   description: "High-performance coatings for airport hangars, runways, aircraft support facilities and aviation infrastructure.",
 };
 
@@ -11,7 +11,7 @@ export default function AviationPage() {
     <IndustryPage
       name="Aviation"
       description="High-performance coatings for airport hangars, terminals, runways and aviation support facilities worldwide."
-      longDescription="The aviation industry demands the highest standards of performance and safety from every component — including coatings. Airport facilities require coatings that can withstand aviation fuel spills, jet blast heat, heavy traffic from aircraft and ground equipment, and the rigours of daily operations. SPI Coatings has supplied coatings to major international airports including Harry Reid International Airport in Las Vegas, where Super Therm® was used to cool airport walkways."
+      longDescription="The aviation industry demands the highest standards of performance and safety from every component — including coatings. Airport facilities require coatings that can withstand aviation fuel spills, jet blast heat, heavy traffic from aircraft and ground equipment, and the rigours of daily operations. SP Coatings has supplied coatings to major international airports including Harry Reid International Airport in Las Vegas, where Super Therm® was used to cool airport walkways."
       challenges={[
         "Extreme heat on tarmac and runway surfaces in hot climates",
         "Fuel and chemical spills requiring chemically resistant surfaces",
