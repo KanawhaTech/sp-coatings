@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
+//Coating Products Page
+
 export const metadata: Metadata = {
   title: "Coating Products - SP Coatings",
   description: "Explore SP Coatings full range of thermal insulation, corrosion, fire, sealant and base coatings. Innovative coatings developed with NASA for 35+ years.",
